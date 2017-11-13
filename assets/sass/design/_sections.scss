@@ -16,7 +16,7 @@
 }
 
 #three {
-  padding-bottom: 39px;
+  padding-bottom: 19px;
 
   @media #{$small} {
     padding-bottom: 10px;
@@ -24,11 +24,7 @@
 }
 
 #four {
-  padding-bottom: 44px;
-
-  @media #{$medium} {
-    padding-bottom: 24px;
-  }
+  padding-bottom: 24px;
 
   @media #{$small} {
     padding-bottom: 10px;
@@ -53,7 +49,7 @@
 }
 
 #seven {
-  padding: 61px 0 60px;
+  padding: 61px 0 30px;
 
   @media #{$medium} {
     padding: 40px 0 10px;

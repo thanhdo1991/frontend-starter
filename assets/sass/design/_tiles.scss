@@ -10,7 +10,7 @@
     display: flex;
     flex-flow: row wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 0;
   }
 
@@ -21,9 +21,9 @@
   &__item {
     @include tileStyle(43%, 60px);
     transition: all $base-duration $base-timing;
+    margin-bottom: 20px;
 
     @media #{$medium} {
-      margin-bottom: 20px;
       padding-bottom: 62%;
     }
 
@@ -61,7 +61,11 @@
 
       @media #{$medium} {
         margin-bottom: 20px;
-        padding-bottom: 58%;
+        padding-bottom: 45%;
+      }
+
+      @media #{$tablet} {
+        padding-bottom: 50%;
       }
 
       @media #{$small} {

@@ -54,10 +54,10 @@ body > section {
   @include grid-column(4);
 
   @media #{$medium} {
-    @include grid-column(6, $medium-grid);
+    @include grid-column(4, $medium-grid);
   }
 
-  @media #{$small} {
+  @media #{$tablet} {
     @include grid-column(6, $small-grid);
   }
 }

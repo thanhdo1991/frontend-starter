@@ -8,25 +8,24 @@
       margin-bottom: 25px;
     }
 
+    @media #{$tablet} {
+      padding-bottom: 60%;
+    }
+
     @media #{$small} {
       margin-bottom: 20px;
+      padding-bottom: 72.5%;
     }
   }
 
   &__item {
-    @media #{$medium} {
-      margin-bottom: 30px;
-
-      &:nth-child(2n + 1) {
-        clear: both;
-      }
-    }
+    margin-bottom: 30px;
   }
 
   &__title {
     margin-bottom: 32px;
 
-    @media #{$small} {
+    @media #{$tablet} {
       margin-bottom: 15px;
     }
   }

@@ -11,12 +11,14 @@ $body-bg-color : #DDDDDD;
 // Breakpoints
 $tiny-breakpoint: 360px;
 $small-breakpoint: 580px;
+$tablet-breakpoint: 767px;
 $medium-breakpoint: 900px;
 $large-breakpoint: 1240px;
 
 // Media queries
 $large: "only screen and (min-width: #{$large-breakpoint})";
 $medium: "only screen and (max-width: #{$medium-breakpoint})";
+$tablet: "only screen and (max-width: #{$tablet-breakpoint})";
 $small: "only screen and (max-width: #{$small-breakpoint})";
 $tiny: "only screen and (max-width: #{$tiny-breakpoint})";
 
