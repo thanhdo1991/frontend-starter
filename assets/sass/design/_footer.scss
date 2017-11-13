@@ -1,68 +1,101 @@
 // Footer related styles
-#footer {
-    padding: 20px 0 20px;
-    background-color: rgba($color-dune, 0.95);
+.footer {
+  padding: 41px 0 31px;
+
+  @media #{$tiny} {
+    text-align: center;
+    padding: 40px 0 30px;
+  }
+
+  .copyright {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.46;
+    vertical-align: bottom;
+
+    span {
+      display: block;
+    }
+  }
+
+  .logo {
+    color: $color-blue;
+    display: inline-block;
+    line-height: 0;
+    margin-right: 16px;
+    text-decoration: none;
+    vertical-align: bottom;
+
+    @media #{$small} {
+      margin-right: 5px;
+    }
+
+    img {
+      display: block;
+      height: 33px;
+    }
+  }
+
+  .branding {
+    @include grid-column(8);
 
     @media #{$medium} {
-        padding: 2em 0;
+      @include grid-column(8, $medium-grid);
     }
 
-    nav {
-        text-align: center;
-
-        ul {
-            list-style: none;
-            margin: 0 auto;
-            width: auto;
-            float: right;
-
-            li {
-                display: inline-block;
-
-                a,
-                a:link,
-                a:visited {
-                    color: $footer-brown;
-                    font-size: 0.8125em;
-                    line-height: 40px;
-                    padding: 20px 14px;
-                    text-decoration: none;
-
-                    @media #{$small} {
-                        font-size: 1.1em;
-                        line-height: 28px;
-                        padding: 20px 10px;
-                    }
-                }
-
-                a:hover,
-                a:active {
-                    text-decoration: none;
-                    color:white;
-                }
-            }
-        }
+    @media #{$small} {
+      @include grid-column(3, $small-grid);
     }
 
-    .copyright {
-        padding: 2em;
-
-        @media #{$medium} {
-            padding: 1em 2em;
-        }
-
-        h3, h4, h5, p {
-            color: $footer-brown;
-            display: block;
-            font-size: 13px;
-            line-height: 1.4;
-            text-align: right;
-            font-style:italic;
-            width: 100%;
-
-            strong {
-                font-weight: bold;
-            }
-        }
+    @media #{$tiny} {
+      @include grid-column(6, $small-grid);
+      margin-bottom: 15px;
     }
+  }
+
+  .navigation {
+    @include grid-column(4);
+    padding-top: 8px;
+
+    @media #{$medium} {
+      @include grid-column(4, $medium-grid);
+    }
+
+    @media #{$small} {
+      @include grid-column(3, $small-grid);
+    }
+
+    @media #{$tiny} {
+      @include grid-column(6, $small-grid);
+    }
+
+    ul {
+      float: right;
+
+      @media #{$tiny} {
+        float: none;
+      }
+
+      > li {
+        margin-right: 18px;
+
+        @media #{$tiny} {
+          display: inline-block;
+          float: none;
+          margin: 0 9px;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        a,
+        a:link
+        a:visited {
+          font-size: 13px;
+        }
+      }
+    }
+  }
 }

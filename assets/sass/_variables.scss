@@ -23,7 +23,7 @@ $tiny: "only screen and (max-width: #{$tiny-breakpoint})";
 // Neat settings
 $neat-grid: (
   columns: 12,
-  gutter: 30px,
+  gutter: 44px,
 );
 
 $medium-grid: (
@@ -41,10 +41,21 @@ $touching-grid: (
   gutter: 0
 );
 
-$page-width: 1250px + (2 * 30px);
+$page-width: 1420px + (2 * 44px);
 
-$helvetica: (
-  "HelveticaNeue",
+$timesnewromanpsmt: (
+  "TimesNewRomanPSMT",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica",
+  "Roboto",
+  "Noto",
+  "Ubuntu",
+  sans-serif
+);
+
+$montserrat: (
+  "Montserrat",
   -apple-system,
   BlinkMacSystemFont,
   "Helvetica",

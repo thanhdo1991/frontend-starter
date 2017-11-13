@@ -1,0 +1,54 @@
+.grid-image {
+  &__image {
+    @extend %bg-image;
+    @include tileStyle(72.5%, 0);
+    margin-bottom: 36px;
+
+    @media #{$medium} {
+      margin-bottom: 25px;
+    }
+
+    @media #{$small} {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    @media #{$medium} {
+      margin-bottom: 30px;
+
+      &:nth-child(2n + 1) {
+        clear: both;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    @media #{$small} {
+      margin-bottom: 15px;
+    }
+  }
+
+  article {
+    padding: 0 31px;
+
+    p {
+      margin-bottom: 2px;
+    }
+  }
+
+  .action {
+    a {
+      color: $color-orange;
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}

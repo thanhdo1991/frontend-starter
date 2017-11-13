@@ -1,122 +1,94 @@
-$navigation-height: 50px;
+.header {
+  padding: 84px 0 64px;
 
-#intro {
-  .logo {
-    height: $navigation-height;
-    transition: all .3s ease;
-    margin-bottom:100px;
+  @media #{$medium} {
+    padding: 50px 0 40px;
+  }
+
+  @media #{$tiny} {
+    padding: 40px 0 30px;
+    text-align: center;
+  }
+
+  .branding {
+    @include grid-column(8);
+
+    @media #{$medium} {
+      @include grid-column(8, $medium-grid);
+    }
 
     @media #{$small} {
-      height: 58px;
+      @include grid-column(3, $small-grid);
     }
 
-    h1 {
-      font-size: 1.4em;
-      line-height: $navigation-height;
-      margin: 0;
-      padding: 0;
-
-      @media #{$small} {
-        line-height: 58px;
-      }
+    @media #{$tiny} {
+      @include grid-column(6, $small-grid);
+      margin-bottom: 10px;
     }
 
-    h1 > a {
-      color: $color-white;
-      display: block;
-      font-size: 22px;
-      line-height: 1.2;
-      margin: 32px auto 0;
-      max-width: 413px;
-      outline: none;
-      text-align: center;
+    .logo {
+      color: $color-green;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 4.8px;
+      margin-right: 26px;
       text-decoration: none;
+      text-transform: uppercase;
+
+      @media #{$medium} {
+        font-size: 15px;
+        letter-spacing: 3px;
+        margin-right: 10px;
+      }
+
+      @media #{$tiny} {
+        margin-right: 0;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: shade($color-green, 10%);
+      }
+    }
+
+    .description {
+      color: $color-sliver;
+      font-family: $timesnewromanpsmt;
+      font-size: 18px;
+      font-style: italic;
+
+      @media #{$medium} {
+        font-size: 15px;
+      }
 
       @media #{$small} {
-          max-width: 260px;
-      }
-
-      &:hover {
-        color: $color-white;
-      }
-
-      &.image {
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 55px;
-        overflow: hidden;
-        text-indent: 450px;
-        transition: all .3s ease;
-        white-space: nowrap;
-
-        @media #{$medium} {
-          margin-top: 45px;
-        }
-
-        @media #{$small} {
-          height: 35px;
-          margin-top: 30px;
-        }
+        display: none;
       }
     }
   }
-}
 
-#header {
-    background-color: rgba($color-dune, 0.95);
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding: 0;
+  .navigation {
+    @include grid-column(4);
 
-    .logo {
-        height: $navigation-height;
-        transition: all .3s ease;
-
-        @media #{$small} {
-            height: 58px;
-        }
-
-        h1 {
-            font-size: 1.4em;
-            line-height: $navigation-height;
-            margin: 0;
-            padding: 0;
-
-            @media #{$small} {
-                line-height: 58px;
-            }
-        }
-
-        h1 > a {
-            color: $color-navy;
-            outline: none;
-            text-decoration: none;
-
-            &:hover {
-                color: $color-blue;
-            }
-
-            &.image {
-                background-position: left center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                display: block;
-                float: left;
-                height: 60px;
-                margin: 17.5px 0px;
-                max-width: 240px;
-                overflow: hidden;
-                text-indent: 260px;
-                transition: all .3s ease;
-
-                @media #{$small} {
-                    height: 42px;
-                    margin: 8px 0px;
-                    max-width: 200px;
-                    text-indent: 220px;
-                }
-            }
-        }
+    @media #{$medium} {
+      @include grid-column(4, $medium-grid);
     }
+
+    @media #{$small} {
+      @include grid-column(3, $small-grid);
+    }
+
+    @media #{$tiny} {
+      @include grid-column(6, $small-grid);
+    }
+
+    ul {
+      float: right;
+
+      @media #{$tiny} {
+        float: none;
+      }
+    }
+  }
 }

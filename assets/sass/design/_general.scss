@@ -2,6 +2,24 @@ body {
   background-color: $color-white;
 }
 
-.no-image[data-background-color] {
-  color: $color-white;
+.no-image {
+  &[data-background-color] {
+    color: $color-white;
+  }
+
+  &[data-background-color*="fff"] {
+    color: $color-black;
+  }
+}
+
+[data-background-image] {
+  @extend %bg-image;
+
+  &[overlay="true"]:after {
+    @include position(absolute, 0);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, $color-green 56.87%);
+    content: '';
+    opacity: .5;
+    z-index: 1;
+  }
 }

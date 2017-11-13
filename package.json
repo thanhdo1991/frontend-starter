@@ -1,7 +1,7 @@
 {
-  "name": "ymca-event",
+  "name": "Pack your bag",
   "version": "1.0.0",
-  "description": "A simple event template for use with YMCA",
+  "description": "A simple event template for use with Pack your bag",
   "private": true,
   "scripts": {
     "dev": "gulp dev",

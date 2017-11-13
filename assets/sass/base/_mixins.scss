@@ -24,3 +24,28 @@
     }
   }
 }
+
+@mixin tileStyle($padParent, $padItem, $floating: 2) {
+  height: 0;
+  padding-bottom: $padParent;
+  position: relative;
+
+  article {
+    @include position(absolute, null 0 0);
+    padding: $padItem;
+    z-index: $floating;
+  }
+}
+
+@mixin tileStyleMobile($media: $medium) {
+  @media #{$media} {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  article {
+    @media #{$media} {
+      position: static;
+    }
+  }
+}

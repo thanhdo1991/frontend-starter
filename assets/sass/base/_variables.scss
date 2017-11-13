@@ -3,12 +3,12 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: $montserrat;
 $heading-font-family: $base-font-family;
 $base-font-size: 16px;
 
 // Line height
-$base-line-height: 1.5;
+$base-line-height: 1.65;
 $heading-line-height: 1.2;
 
 // Other Sizes
@@ -25,7 +25,7 @@ $light-gray: #ddd;
 
 $color-navy: #0c62ad;
 $color-dark-gray: #333;
-$color-white: #fff;
+
 $color-light-blue: #186ab1;
 $color-light-purple: #f27328;
 $color-gray-5c: #5c5c5c;
@@ -36,32 +36,31 @@ $color-gray-f8: #f8f8f8;
 
 // MTV
 $color-dune: #322c26;
-$color-dark-brown: #36302a;
 $footer-brown: #cbab8c;
 
-$color-tuatara: #2f2e2c;
-$color-yellow: #f0b336;
-$color-yellow-dark: #d0941f;
-$color-keppel: #2fb2ab;
-$color-keppel-dark: #006160;
-$color-red: #bf2b45;
-$color-red-dark: #8d2838;
-$color-blue: #009bbb;
-$color-blue-dark: #00597a;
-$color-brown: #9a656c;
-$color-brown-dark: #bf2b45;
-$color-luxor-gold: #98942c;
-$color-luxor-gold-dark: #4c4a16;
-$color-orange: #d9852d;
-$color-orange-dark: #9d6120;
+// Button color.
+$color-green: #083441;
+$color-blue: #566d88;
+$color-blue-dark: #344b66;
+$color-brown: #a09387;
+$color-brown-dark: #635445;
+$color-alabaster: #f8f8f8;
+$color-white: #fff;
+$color-black: #000;
+
 // Bg color.
-$color-purple: #59136a;
-$color-gurkha: #959c72;
-$color-black: #201b17;
-$color-merlin: #36302a;
+$color-casper: #adbdce;
+$color-soft-amber: #cebdad;
+$color-vista-white: #fbf7f4;
+
+// Text color.
+$color-tiber: #073441;
+$color-sliver: #adadad;
+$color-orange: #ff865f;
+$color-elephant: #123c47;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $color-green;
 $action-color: $blue;
 
 // Border
