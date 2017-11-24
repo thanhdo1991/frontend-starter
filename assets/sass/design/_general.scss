@@ -3,12 +3,8 @@ body {
 }
 
 .no-image {
-  &[data-background-color] {
-    color: $color-white;
-  }
-
   &[data-background-color*="fff"] {
-    color: $color-black;
+    color: $base-font-color;
   }
 }
 
