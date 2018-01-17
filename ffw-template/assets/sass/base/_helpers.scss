@@ -1,0 +1,66 @@
+.text-center {
+  text-align: center;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+.bg-dark {
+  background-color: $dark-gray;
+}
+
+.bg-gray-opacity {
+  background-color: rgba($dark-gray, .05);
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-dark {
+  color: $base-font-color;
+}
+
+.image-shadow {
+  position: relative;
+
+  &:before {
+    @include position(absolute, 0);
+    background: linear-gradient(-180deg, rgba($color-black, 0) 0%, $base-font-color 100%);
+    content: '';
+  }
+}
+
+.border-left {
+  position: relative;
+  padding-left: 30px;
+
+  &:before {
+    border-left: 10px solid rgba($base-font-color, .05);
+    bottom: 7px;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    .text-white & {
+      border-color: rgba($color-white, .1);
+    }
+  }
+}
+
+.read-more a,
+.link-arrow {
+  color: $base-font-color;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  &:after {
+    @extend %icons;
+    @extend .icon-angle-right:before;
+    margin-left: 11px;
+  }
+}

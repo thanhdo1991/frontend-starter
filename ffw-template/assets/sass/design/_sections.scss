@@ -1,0 +1,22 @@
+section {
+}
+
+#five {
+  padding-top: 60px;
+
+  @media #{$small} {
+    padding-top: 40px;
+  }
+}
+
+#six {
+  padding-bottom: 68px;
+
+  @media #{$tablet} {
+    padding-bottom: 60px;
+  }
+
+  @media #{$small} {
+    padding-bottom: 40px;
+  }
+}
