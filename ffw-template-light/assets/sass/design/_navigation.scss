@@ -1,0 +1,57 @@
+.menu {
+  @include clearfix;
+
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    @media #{$small} {
+      margin-left: 20px;
+    }
+
+    a {
+      color: $base-font-color;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 24px;
+      position: relative;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-black
+      }
+
+      &:before {
+        content: '/';
+        left: 0;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.main-navigation {
+  .menu {
+    li {
+      a {
+        @media #{$small} {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.footer-navigation {
+  .menu {
+    li {
+      @media #{$small} {
+        margin-left: 28px;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

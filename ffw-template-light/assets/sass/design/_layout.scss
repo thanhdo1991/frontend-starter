@@ -1,0 +1,108 @@
+html {
+  @media #{$small} {
+    font-size: 80%;
+  }
+}
+
+// Basic Layout Considerations
+body > section {
+  @include clearfix();
+  padding-bottom: 54px;
+  padding-top: 78px;
+
+  @media #{$medium} {
+    padding: 60px 0;
+  }
+
+  @media #{$small} {
+    padding: 40px 0;
+  }
+
+  > .container {
+    @include grid-container;
+    margin: 0 auto;
+    max-width: $page-width;
+  }
+
+  .section-title {
+    letter-spacing: 1px;
+    line-height: 1.45;
+    margin-bottom: 29px;
+
+    @media #{$medium} {
+      margin-bottom: 30px;
+    }
+
+    @media #{$tiny} {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.grid-2 {
+  @include grid-column(2);
+
+  @media #{$medium} {
+    @include grid-column(6, $medium-grid);
+  }
+}
+
+.grid-3 {
+  @include grid-column(3);
+
+  @media #{$medium} {
+    @include grid-column(6, $medium-grid);
+  }
+
+  @media #{$tiny} {
+    @include grid-column(6, $small-grid);
+  }
+}
+
+.grid-4 {
+  @include grid-column(4);
+
+  @media #{$medium} {
+    @include grid-column(4, $medium-grid);
+  }
+
+  @media #{$tablet} {
+    @include grid-column(6, $small-grid);
+  }
+}
+
+.grid-6 {
+  @include grid-column(6);
+
+  @media #{$medium} {
+    @include grid-column(6, $medium-grid);
+  }
+
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
+}
+
+.grid-8 {
+  @include grid-column(8);
+
+  @media #{$medium} {
+    @include grid-column(8, $medium-grid);
+  }
+
+  @media #{$tablet} {
+    @include grid-column(6, $small-grid);
+  }
+}
+
+.grid-12 {
+  @include grid-column(12);
+
+  @media #{$medium} {
+    @include grid-column(12, $medium-grid);
+  }
+
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
+}

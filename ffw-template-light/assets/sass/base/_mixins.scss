@@ -1,0 +1,26 @@
+//Convert px to em
+@function em($target, $context: $base-font-size) {
+  @if $target == 0 {
+    @return 0;
+  }
+  @return ($target / $context) * 1em;
+}
+
+@mixin button-bg($bg, $bgAcive, $textColor: $color-white) {
+  background-color: $bg;
+  color: $textColor;
+
+  &:hover,
+  &:active,
+  &.active {
+    background-color: $bgAcive;
+    color: $textColor;
+  }
+
+  &:disabled {
+    &:hover,
+    &:active {
+      background: $bg;
+    }
+  }
+}

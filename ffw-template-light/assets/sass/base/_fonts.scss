@@ -1,0 +1,63 @@
+$fonts-dir: '../fonts';
+
+@font-face {
+  font-family: 'MarkWebPro';
+  src: url('#{$fonts-dir}/MarkWebProBold.eot');
+  src: url('#{$fonts-dir}/MarkWebProBold.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/MarkWebProBold.woff') format('woff'),
+    url('#{$fonts-dir}/MarkWebProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkWebPro';
+  src: url('#{$fonts-dir}/MarkWebProHeavy.eot');
+  src: url('#{$fonts-dir}/MarkWebProHeavy.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/MarkWebProHeavy.woff') format('woff'),
+    url('#{$fonts-dir}/MarkWebProHeavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkWebPro';
+  src: url('#{$fonts-dir}/MarkWebPro.eot');
+  src: url('#{$fonts-dir}/MarkWebPro.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/MarkWebPro.woff') format('woff'),
+    url('#{$fonts-dir}/MarkWebPro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkWebPro';
+  src: url('#{$fonts-dir}/MarkWebProMedium.eot');
+  src: url('#{$fonts-dir}/MarkWebProMedium.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/MarkWebProMedium.woff') format('woff'),
+    url('#{$fonts-dir}/MarkWebProMedium.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MarkWebPro';
+  src: url('#{$fonts-dir}/MarkWebProItalic.eot');
+  src: url('#{$fonts-dir}/MarkWebProItalic.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/MarkWebProItalic.woff') format('woff'),
+    url('#{$fonts-dir}/MarkWebProItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'lander';
+  src:  url('#{$fonts-dir}/lander.eot?jmpwz3');
+  src:  url('#{$fonts-dir}/lander.eot?jmpwz3#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/lander.woff2?jmpwz3') format('woff2'),
+    url('#{$fonts-dir}/lander.ttf?jmpwz3') format('truetype'),
+    url('#{$fonts-dir}/lander.woff?jmpwz3') format('woff'),
+    url('#{$fonts-dir}/lander.svg?jmpwz3#lander') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

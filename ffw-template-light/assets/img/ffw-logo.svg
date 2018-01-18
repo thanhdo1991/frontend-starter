@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="27px" viewBox="0 0 80 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>FFW Logo RGB Black</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Draft-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-90.000000, -53.000000)">
+        <g id="FFW-Logo-RGB-Black" transform="translate(90.000000, 53.000000)" fill="#000000">
+            <g id="FFW-Logo-RGB-Black-01">
+                <polygon id="Shape" fill-rule="nonzero" points="72 23.745377 73.1354167 23.745377 73.1354167 27 73.8645833 27 73.8645833 23.745377 75 23.745377 75 23 72 23"></polygon>
+                <polygon id="Shape" fill-rule="nonzero" points="78 25.7027027 77.0618557 23 76 23 76 27 76.7216495 27 76.7216495 24.0014225 77.6185567 26.6130868 78.3814433 26.6130868 79.2783505 23.9786629 79.2783505 27 80 27 80 23 78.943299 23"></polygon>
+                <path d="M73.4509091,0 C71.9427255,0.00566405877 70.5929652,0.927964154 70.0527273,2.322 C69.96,2.5812 67.0909091,13.3164 65.9618182,17.55 L61.02,0 L53.5527273,0 L48.6109091,17.5176 L43.9036364,0 L0,0 L0,23.4522 C0.00300371392,25.4103628 1.60569417,26.9970263 3.58363636,27 L7.16727273,27 L7.16727273,17.01 L16.5709091,17.01 L16.5709091,10.53 L7.16727273,10.53 L7.16727273,6.48 L19.9527273,6.48 L19.9527273,27 L27.12,27 L27.12,17.01 L36.5454545,17.01 L36.5454545,10.53 L27.12,10.53 L27.12,6.48 L38.3890909,6.48 L44.4272727,27 L52.6090909,27 L57.2618182,11.2428 L61.8927273,27 L70.0745455,27 L78,0 L73.4509091,0 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

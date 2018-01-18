@@ -1,0 +1,16 @@
+.grid-image {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row nowrap;
+  place-content: stretch flex-start;
+}
+
+.grid-content {
+  display: flex;
+  flex-flow: row wrap;
+
+  &-item {
+    display: flex;
+    margin-bottom: 46px;
+  }
+}
