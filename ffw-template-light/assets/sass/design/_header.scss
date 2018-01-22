@@ -2,6 +2,10 @@
   padding-bottom: 29px;
   padding-top: 43px;
 
+  @media #{$medium} {
+    padding: 26px 0 17px;
+  }
+
   @media #{$small} {
     padding: 15px 0;
   }
@@ -53,12 +57,6 @@
           text-indent: 160px;
           transition: all .3s ease;
           white-space: nowrap;
-
-          // @media #{$medium} {
-          //   height: 65px;
-          //   max-width: 140px;
-          //   text-indent: 150px;
-          // }
 
           @media #{$small} {
             height: 25px;

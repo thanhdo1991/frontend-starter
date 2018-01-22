@@ -3,6 +3,32 @@
   display: flex;
   flex-flow: row nowrap;
   place-content: stretch flex-start;
+
+  &-item {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &.text-white {
+      @media #{$large} {
+        min-height: 491px;
+      }
+
+      @media #{$tablet} {
+        margin-bottom: 30px;
+      }
+
+      @media #{$small} {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media #{$tablet} {
+    @include clearfix;
+    display: block;
+  }
 }
 
 .grid-content {
@@ -12,5 +38,13 @@
   &-item {
     display: flex;
     margin-bottom: 46px;
+
+    @media #{$medium} {
+      margin-bottom: 30px;
+    }
+
+    @media #{$small} {
+      margin-bottom: 20px;
+    }
   }
 }

@@ -4,8 +4,29 @@
   background-size: cover;
   height: 0;
   margin-bottom: 46px;
-  padding-bottom: 14.7%;
+  padding-bottom: 25%;
   position: relative;
+
+  @media #{$large} {
+    padding-bottom: 14.7%;
+  }
+
+  @media #{$medium} {
+    margin-bottom: 30px;
+  }
+
+  @media #{$tablet} {
+    padding-bottom: 30%;
+  }
+
+  @media #{$small} {
+    padding-bottom: 45%;
+    margin-bottom: 20px;
+  }
+
+  @media #{$tiny} {
+    padding-bottom: 90%;
+  }
 
   &:before {
     @include position(absolute, 0);
@@ -13,8 +34,44 @@
     content: '';
   }
 
-  .grid-image & {
-    padding-bottom: 52.7%;
+  .grid-image-item & {
+    @include position(absolute, 0);
+    padding-bottom: 0;
     margin-bottom: 0;
+    height: auto;
+
+    &:before {
+      display: none;
+    }
+
+    @media #{$tablet} {
+      @include position(relative, auto);
+      padding-bottom: 50%;
+      width: 100%;
+    }
+
+    @media #{$small} {
+      padding-bottom: 75%;
+    }
+
+    @media #{$tiny} {
+      padding-bottom: 100%;
+    }
+  }
+}
+
+.tiles {
+  .tile {
+    @media #{$tablet} {
+      @include grid-column(6, $medium-grid);
+    }
+
+    @media #{$small} {
+      @include grid-column(3, $small-grid);
+    }
+
+    @media #{$tiny} {
+      @include grid-column(6, $small-grid);
+    }
   }
 }
