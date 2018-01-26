@@ -1,0 +1,111 @@
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-dark {
+  color: $base-font-color;
+}
+
+.bg-blue-opacity {
+  z-index: 0;
+  position: relative;
+
+  &:before {
+    @include position(absolute, 0);
+    background-color: rgba($color-blue-light, .24);
+    opacity: .1;
+    content: '';
+  }
+}
+
+.bg-light {
+  background-color: $color-gray-f9;
+}
+
+.bg-triangle-blue {
+  background-color: $base-font-color;
+  height: 459px;
+  position: relative;
+
+  @media #{$medium} {
+    height: 400px
+  }
+
+  @media #{$tablet} {
+    height: 350px;
+  }
+
+  @media #{$small} {
+    height: 250px;
+  }
+
+  &:before {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform-origin: left top;
+    transform: skewY(-4.2179276085854deg);
+    width: 100%;
+  }
+}
+
+.read-more a {
+  font-size: 13px;
+}
+
+.border-container {
+  border-bottom: 1px solid $color-gray-ef;
+  margin: 0 auto;
+  max-width: $page-width;
+}
+
+.border-short {
+  position: relative;
+
+  &:after {
+    border-bottom: 1px solid $color-gray-ef;
+    bottom: 0;
+    content: '';
+    left: 0;
+    margin: 0 auto;
+    max-width: 449px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@include keyframes(cd-rotate) {
+  0% {
+    transform: perspective($cd-perspective) rotateY(0);
+  }
+
+  70% {
+    transform: perspective($cd-perspective) rotateY(200deg);
+  }
+
+  100% {
+    transform: perspective($cd-perspective) rotateY(180deg);
+  }
+}
+
+@include keyframes(cd-rotate-inverse) {
+  0% {
+    transform: perspective($cd-perspective) rotateY(-180deg);
+  }
+
+  70% {
+    transform: perspective($cd-perspective) rotateY(20deg);
+  }
+
+  100% {
+    transform: perspective($cd-perspective) rotateY(0);
+  }
+}

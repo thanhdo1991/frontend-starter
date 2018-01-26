@@ -1,0 +1,34 @@
+.menu {
+  @include clearfix;
+
+  li {
+    display: inline-block;
+    margin-left: 34px;
+
+    @media #{$small} {
+      margin-left: 20px;
+    }
+
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+.main-navigation {
+  .menu {
+    margin-top: 8px;
+
+    @media #{$small} {
+      margin-top: 0;
+    }
+
+    li {
+      a {
+        @media #{$small} {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
