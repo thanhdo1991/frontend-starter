@@ -1,63 +1,34 @@
-$navigation-height: 50px;
+.menu {
+  @include clearfix;
 
-// Navigation style
-#main-navigation {
-    @include clearfix();
-    display: block;
-    height: $navigation-height;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  li {
+    display: inline-block;
+    margin-left: 34px;
 
-    @media #{$medium} {
-        height: $navigation-height - 10px;
+    @media #{$small} {
+      margin-left: 20px;
     }
 
-    .container {
-        @include grid-container;
-        max-width: $page-width;
-        margin: 0 auto;
+    a {
+      font-size: 16px;
+    }
+  }
+}
+
+.main-navigation {
+  .menu {
+    margin-top: 8px;
+
+    @media #{$small} {
+      margin-top: 0;
     }
 
-    ul.navbar {
-        @include grid-column(12);
-        // height: $navigation-height;
-        list-style: none;
-
-        @media #{$medium} {
-            // height: $navigation-height - 10px;
+    li {
+      a {
+        @media #{$small} {
+          font-size: 12px;
         }
-
-        > li {
-            float: left;
-
-            a,
-            a:link,
-            a:visited {
-                color: rgba($color-white, 0.8);
-                display: block;
-                line-height: $navigation-height;
-                margin-left: 0;
-                outline: none;
-                text-align: center;
-                text-decoration: none;
-                width: 100%;
-                font-size:.8125em;
-                padding: 0 10px;
-
-                @media #{$medium} {
-                    line-height: $navigation-height - 10px;
-                }
-            }
-
-            a:hover,
-            a:active {
-                background-color: rgba($color-white, .18);
-            }
-        }
+      }
     }
-
-    li.has-dropdown ul.dropdown {
-        display: none;
-    }
+  }
 }

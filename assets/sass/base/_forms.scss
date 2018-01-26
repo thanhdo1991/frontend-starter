@@ -31,12 +31,14 @@ textarea {
 #{$all-text-inputs} {
   appearance: none;
   background-color: $base-background-color;
+  border-radius: 8px;
   border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $_form-box-shadow;
+  box-shadow: 0;
   box-sizing: border-box;
-  margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  color: $color-black;
+  font-size: 21px;
+  margin-bottom: 18px;
+  padding: 16px 22px;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
@@ -60,12 +62,14 @@ textarea {
   }
 
   &::placeholder {
-    color: tint($base-font-color, 40%);
+    color: rgba($color-black, .4);
+    font-size: 21px;
   }
 }
 
 textarea {
   resize: vertical;
+  min-height: 171px;
 }
 
 [type="checkbox"],

@@ -1,122 +1,80 @@
-$navigation-height: 50px;
+.header {
+  padding-bottom: 8px;
+  padding-top: 19px;
 
-#intro {
-  .logo {
-    height: $navigation-height;
-    transition: all .3s ease;
-    margin-bottom:100px;
+  @media #{$small} {
+    padding: 15px 0;
+  }
 
-    @media #{$small} {
-      height: 58px;
+  > .container {
+    @include grid-container;
+
+    .left-content {
+      float: left;
     }
+
+    .right-content {
+      float: right;
+      padding: 16px 0;
+
+      @media #{$small} {
+        padding: 12px 0px 11px;
+      }
+    }
+  }
+
+  .logo {
+    padding: 0 11px;
 
     h1 {
-      font-size: 1.4em;
-      line-height: $navigation-height;
+      font-size: em(46px);
       margin: 0;
       padding: 0;
+      font-weight: 700;
 
       @media #{$small} {
-        line-height: 58px;
-      }
-    }
-
-    h1 > a {
-      color: $color-white;
-      display: block;
-      font-size: 22px;
-      line-height: 1.2;
-      margin: 32px auto 0;
-      max-width: 413px;
-      outline: none;
-      text-align: center;
-      text-decoration: none;
-
-      @media #{$small} {
-          max-width: 260px;
+        font-size: 36px;
       }
 
-      &:hover {
-        color: $color-white;
-      }
-
-      &.image {
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 55px;
-        overflow: hidden;
-        text-indent: 450px;
-        transition: all .3s ease;
-        white-space: nowrap;
-
-        @media #{$medium} {
-          margin-top: 45px;
-        }
+      > a {
+        display: block;
+        margin: 10px 0;
+        outline: none;
 
         @media #{$small} {
+          margin: 0;
+        }
+
+        &.image {
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
           height: 35px;
-          margin-top: 30px;
+          max-width: 150px;
+          overflow: hidden;
+          text-indent: 160px;
+          transition: all .3s ease;
+          white-space: nowrap;
+          margin-top: 17px;
+          margin-bottom: 25px;
+
+          @media #{$small} {
+            height: 25px;
+            max-width: 100px;
+            text-indent: 120px;
+            margin: 10px 0;
+          }
         }
       }
     }
   }
-}
 
-#header {
-    background-color: rgba($color-dune, 0.95);
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding: 0;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 
-    .logo {
-        height: $navigation-height;
-        transition: all .3s ease;
-
-        @media #{$small} {
-            height: 58px;
-        }
-
-        h1 {
-            font-size: 1.4em;
-            line-height: $navigation-height;
-            margin: 0;
-            padding: 0;
-
-            @media #{$small} {
-                line-height: 58px;
-            }
-        }
-
-        h1 > a {
-            color: $color-navy;
-            outline: none;
-            text-decoration: none;
-
-            &:hover {
-                color: $color-blue;
-            }
-
-            &.image {
-                background-position: left center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                display: block;
-                float: left;
-                height: 60px;
-                margin: 17.5px 0px;
-                max-width: 240px;
-                overflow: hidden;
-                text-indent: 260px;
-                transition: all .3s ease;
-
-                @media #{$small} {
-                    height: 42px;
-                    margin: 8px 0px;
-                    max-width: 200px;
-                    text-indent: 220px;
-                }
-            }
-        }
-    }
+  .main-navigation {
+    float: right;
+  }
 }

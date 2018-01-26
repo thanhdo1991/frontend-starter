@@ -1,23 +1,28 @@
 #{$all-buttons} {
-  @include button-bg($color-yellow, $color-yellow-dark, $color-tuatara);
+  @include button-bg($action-color, $color-blue-dark);
   -webkit-font-smoothing: antialiased;
   appearance: none;
-  border-radius: 2px;
+  border-radius: 25px;
   border: 0;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
   line-height: 1;
-  padding: 12px 24px;
+  padding: 17px 44px 16px 46px;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+
+  @media #{$small} {
+    padding: 15px 30px 13px;
+    max-width: inherit;
+    width: auto;
+  }
 
   &:focus {
     outline: $focus-outline;
@@ -30,10 +35,52 @@
   }
 
   &.red {
-    @include button-bg($color-red, $color-red-dark);
+    @include button-bg($color-red, darken($color-red, 10%));
   }
 
-  &.big {
-    padding: 14px 40px 18px 36px;
+  &.blue {
+    @include button-bg($color-blue-darken, darken($color-blue-darken, 10%));
+  }
+
+  &.small {
+    padding: 15px 36px 13px 35px;
+    font-weight: 400;
+  }
+
+  &.transparent {
+    @include button-bg(transparent, $color-gray-f8, $color-blue-dark);
+    background-color: transparent;
+    border: 1px solid rgba($light-gray, .1);
+    box-shadow: 0 0 16px 0 rgba(45, 46, 46, 0.1);
+    font-size: 14px;
+    font-weight: 300;
+    padding: 15px 23px 13px;
+    text-shadow: 0 0 8px rgba(45, 46, 46, 0.1);
+  }
+
+  &.icon {
+    font-weight: 400;
+    max-width: 277px;
+    padding: 17px 10px 16px 77px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+
+    @media #{$tiny} {
+      padding-left: 50px;
+    }
+
+    &:before {
+      font-size: 33px;
+      left: 25px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @media #{$tiny} {
+        font-size: 22px;
+        left: 22px;
+      }
+    }
   }
 }
