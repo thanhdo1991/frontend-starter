@@ -23,6 +23,7 @@ $small: "only screen and (max-width: #{$small-breakpoint})";
 $tiny: "only screen and (max-width: #{$tiny-breakpoint})";
 
 $gutter-width: 44px;
+$gutter-medium-width: 30px;
 $container: 1420px;
 $container-small: 1174px;
 
@@ -34,7 +35,7 @@ $neat-grid: (
 
 $medium-grid: (
   columns: 12,
-  gutter: 30px,
+  gutter: $gutter-medium-width,
 );
 
 $small-grid: (
