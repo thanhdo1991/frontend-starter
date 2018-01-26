@@ -44,12 +44,10 @@
   }
 
   &:before {
+    @include position(absolute, null null 0 0);
     background: inherit;
-    bottom: 0;
     content: '';
     height: 100%;
-    left: 0;
-    position: absolute;
     transform-origin: left top;
     transform: skewY(-4.2179276085854deg);
     width: 100%;
@@ -70,14 +68,11 @@
   position: relative;
 
   &:after {
+    @include position(absolute, null 0 0 0);
     border-bottom: 1px solid $color-gray-ef;
-    bottom: 0;
     content: '';
-    left: 0;
     margin: 0 auto;
     max-width: 449px;
-    position: absolute;
-    right: 0;
     width: 100%;
   }
 }

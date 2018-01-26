@@ -71,10 +71,8 @@
     }
 
     &:before {
+      @include position(absolute, 50% null null 25px);
       font-size: 33px;
-      left: 25px;
-      position: absolute;
-      top: 50%;
       transform: translateY(-50%);
 
       @media #{$tiny} {

@@ -2,11 +2,13 @@
   clear: both;
 
   &-item {
+    align-content: stretch;
     align-items: center;
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     margin-bottom: 80px;
-    place-content: stretch flex-start;
 
     @media #{$large} {
       margin-bottom: 115px;

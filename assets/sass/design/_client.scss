@@ -1,12 +1,14 @@
 .client {
+  align-content: stretch;
   align-items: center;
   display: flex;
-  flex-flow: row nowrap;
-  place-content: stretch center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   position: relative;
 
   @media #{$small} {
-    place-content:stretch flex-start;
+    justify-content: flex-start;
   }
 
   &-wrapper {
