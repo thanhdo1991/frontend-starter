@@ -1,5 +1,5 @@
 #{$all-buttons} {
-  @include button-bg($action-color, $color-blue-dark);
+  @include button-bg($action-color, $color-blue-hover);
   -webkit-font-smoothing: antialiased;
   appearance: none;
   border-radius: 25px;
@@ -38,8 +38,12 @@
     @include button-bg($color-red, darken($color-red, 10%));
   }
 
-  &.blue {
+  &.blue-darken {
     @include button-bg($color-blue-darken, darken($color-blue-darken, 10%));
+  }
+
+  &.blue-dark {
+    @include button-bg($color-blue-dark, $color-blue-dark-hover);
   }
 
   &.small {
