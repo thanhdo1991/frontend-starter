@@ -1,0 +1,35 @@
+.menu {
+  @include clearfix;
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+
+    @media #{$small} {
+      margin-left: 10px;
+    }
+
+    a {
+      color: $color-black;
+      font-size: 13px;
+      font-weight: 300;
+      opacity: .4;
+
+      &:hover,
+      &:active,
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.main-navigation {
+  .menu {
+    a {
+      @media #{$small} {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+// Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+
+// Typography
+$base-font-family: $montserrat;
+$heading-font-family: $base-font-family;
+$base-font-size: 16px;
+
+// Line height
+$base-line-height: 1.56;
+$heading-line-height: 1.25;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #168beb;
+$dark-gray: #171717;
+$medium-gray: #999;
+$light-gray: #5a6363;
+
+$color-white: #fff;
+$color-black: #000;
+$color-gray-ef: #efefef;
+$color-gray-2e: #2d2e2e;
+$color-gray-ff: #fff2f4;
+$color-gray-cf: #cfcfcf;
+$color-gray-b2: #b2b2b2;
+$color-gray-c6: #c6c6c6;
+$color-gray-f1: #f1f5f7;
+$color-gray-c2: #c2d1db;
+$color-gray-df: #dfe6eb;
+
+// Buttons color.
+$color-blue-hover: #004a8f;
+
+// Font Colors
+$base-font-color: $color-black;
+$action-color: $blue;
+
+// Border
+$base-border-color: $color-gray-c2;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: $color-gray-f1;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
