@@ -5,35 +5,49 @@ html {
 }
 
 // Basic Layout Considerations
-body > section {
-  @include clearfix();
-  padding-bottom: 58px;
-  padding-top: 130px;
+.page-wrapper {
+  align-content: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  min-height: 100%;
 
-  @media #{$medium} {
-    padding: 80px 0 50px;
-  }
+  > section {
+    @include clearfix();
+    padding-bottom: 80px;
+    padding-top: 73px;
 
-  @media #{$small} {
-    padding: 60px 0 35px;
-  }
+    @media #{$large} {
+      padding-bottom: 134px;
+    }
 
-  > .container {
-    @include grid-container;
-    margin: 0 auto;
-    max-width: $page-width;
-  }
+    @media #{$medium} {
+      padding: 60px 0 50px;
+    }
 
-  > .container-small {
-    max-width: $page-small-width;
+    @media #{$small} {
+      padding: 40px 0 35px;
+    }
+
+    > .container {
+      @include grid-container;
+      margin: 0 auto;
+      max-width: $page-width;
+    }
+
+    > .container-small {
+      max-width: $page-small-width;
+    }
   }
 }
 
 .section-title {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 
-  @media #{$medium} {
-    margin-bottom: 70px;
+  @media #{$large} {
+    margin-bottom: 83px;
   }
 
   @media #{$small} {
@@ -45,55 +59,11 @@ body > section {
   }
 }
 
-.grid-2 {
-  @include grid-column(2);
-
-  @media #{$medium} {
-    @include grid-column(6, $medium-grid);
-  }
-}
-
-.grid-3 {
-  @include grid-column(3);
-
-  @media #{$medium} {
-    @include grid-column(6, $medium-grid);
-  }
-
-  @media #{$tiny} {
-    @include grid-column(6, $small-grid);
-  }
-}
-
-.grid-4 {
-  @include grid-column(4);
-
-  @media #{$medium} {
-    @include grid-column(4, $medium-grid);
-  }
-
-  @media #{$tablet} {
-    @include grid-column(6, $small-grid);
-  }
-}
-
 .grid-6 {
   @include grid-column(6);
 
   @media #{$medium} {
     @include grid-column(6, $medium-grid);
-  }
-
-  @media #{$tablet} {
-    @include grid-column(6, $small-grid);
-  }
-}
-
-.grid-8 {
-  @include grid-column(8);
-
-  @media #{$medium} {
-    @include grid-column(8, $medium-grid);
   }
 
   @media #{$tablet} {

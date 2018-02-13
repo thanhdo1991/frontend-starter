@@ -1,19 +1,15 @@
-.header {
-  padding-bottom: 34px;
-  padding-top: 67px;
+.footer {
+  margin-top: auto;
+  padding-bottom: 50px;
+  padding-top: 59px;
 
   @media #{$medium} {
-    padding-bottom: 25px;
-    padding-top: 45px;
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   @media #{$small} {
     padding: 15px 0;
-  }
-
-  @media #{$tiny} {
-    text-align: center;
-    margin-bottom: 30px;
   }
 
   > .container {
@@ -21,10 +17,6 @@
 
     .left-content {
       float: left;
-
-      @media #{$tiny} {
-        float: none;
-      }
     }
 
     .right-content {
@@ -34,14 +26,12 @@
       @media #{$small} {
         padding: 12px 0px 11px;
       }
-
-      @media #{$tiny} {
-        float: none;
-      }
     }
   }
 
   .logo {
+    float: left;
+
     h1 {
       font-size: em(26px);
       margin: 0;
@@ -58,6 +48,10 @@
         outline: none;
         color: $color-black;
 
+        @media #{$small} {
+          margin: 0;
+        }
+
         &.image {
           background-position: left center;
           background-repeat: no-repeat;
@@ -68,6 +62,8 @@
           text-indent: 160px;
           transition: all .3s ease;
           white-space: nowrap;
+          // margin-top: 17px;
+          // margin-bottom: 25px;
 
           @media #{$small} {
             height: 25px;
@@ -75,26 +71,32 @@
             text-indent: 120px;
             margin: 10px 0;
           }
-
-          @media #{$tiny} {
-            margin: 10px auto;
-          }
         }
       }
     }
   }
 
+  .logo-second {
+    float: left;
+    padding: 8px 0;
+    line-height: 0;
+    margin-left: 18px;
+
+    img {
+      height: 38px;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
   .main-navigation {
     float: right;
 
-    @media #{$tiny} {
-      float: none;
+    a {
+      opacity: 1;
     }
-  }
-}
-
-.feature-logo {
-  img {
-    max-height: 83px;
   }
 }

@@ -16,7 +16,8 @@ legend {
 
 label {
   display: block;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 300;
   margin-bottom: $small-spacing / 2;
 }
 
@@ -36,9 +37,9 @@ textarea {
   box-shadow: 0;
   box-sizing: border-box;
   color: $color-black;
-  font-size: 21px;
+  font-size: 16px;
   margin-bottom: 18px;
-  padding: 16px 22px;
+  padding: 14px 22px;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
