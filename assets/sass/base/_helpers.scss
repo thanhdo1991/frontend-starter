@@ -15,9 +15,11 @@
 }
 
 .border-container {
+  height: 1px;
+  margin: 0 auto;
   max-width: $page-width;
   padding: 0 $gutter-width;
-  margin: 0 auto;
+  width: 100%;
 
   @media #{$medium} {
     padding: 0 $gutter-medium-width;
