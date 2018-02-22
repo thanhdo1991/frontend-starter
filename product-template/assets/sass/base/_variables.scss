@@ -27,7 +27,7 @@ $color-white: #fff;
 $color-black: #000;
 $color-gray-ef: #efefef;
 $color-gray-2e: #2d2e2e;
-$color-gray-ff: #fff2f4;
+$color-gray-ee: #eef2f4;
 $color-gray-cf: #cfcfcf;
 $color-gray-b2: #b2b2b2;
 $color-gray-c6: #c6c6c6;
@@ -49,6 +49,7 @@ $base-border: 1px solid $base-border-color;
 // Background Colors
 $base-background-color: $color-gray-f1;
 $secondary-background-color: tint($base-border-color, 75%);
+$body-background-color: $color-white;
 
 // Focus
 $focus-outline-color: transparentize($action-color, 0.4);

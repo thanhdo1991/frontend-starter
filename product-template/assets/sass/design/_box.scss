@@ -20,17 +20,19 @@
   }
 
   .image {
-    border-color: $color-gray-ff;
-    border-radius: 8px 8px 0 0;
+    border-color: $color-gray-ee;
+    border-radius: 8px;
     border-style: solid;
-    border-width: 1px 1px 0;
+    border-width: 1px;
     line-height: 0;
-    margin: 5px auto 23px;
+    margin: 5px auto 0;
     max-width: 276px;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 
     img {
-      border-radius: 8px 8px 0 0;
+      border-radius: 8px;
     }
 
     &.no-border {
@@ -52,6 +54,15 @@
     @media #{$medium} {
       margin-bottom: 30px;
     }
+  }
+
+  .wrapper {
+    background-color: $body-background-color;
+    margin-top: -95px;
+    min-height: 95px;
+    padding-top: 25px;
+    position: relative;
+    z-index: 2;
   }
 }
 
