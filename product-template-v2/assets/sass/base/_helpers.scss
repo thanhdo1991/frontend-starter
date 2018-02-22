@@ -1,0 +1,35 @@
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-dark {
+  color: $base-font-color;
+}
+
+.bg-light {
+  background-color: rgba($color-gray-cf, .1);
+}
+
+.border-container {
+  height: 1px;
+  margin: 0 auto;
+  max-width: $page-width;
+  padding: 0 $gutter-width;
+  width: 100%;
+
+  @media #{$medium} {
+    padding: 0 $gutter-medium-width;
+  }
+
+  &-inner {
+    border-bottom: 1px solid $color-gray-ef;
+  }
+}
+
+.read-more a {
+  font-size: 20px;
+}
