@@ -1,0 +1,13 @@
+$fonts-dir: '../fonts';
+
+@font-face {
+  font-family: 'lander';
+  src: url('#{$fonts-dir}/lander.eot?wkpc2b');
+  src: url('#{$fonts-dir}/lander.eot?wkpc2b#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/lander.woff2?wkpc2b') format('woff2'),
+    url('#{$fonts-dir}/lander.ttf?wkpc2b') format('truetype'),
+    url('#{$fonts-dir}/lander.woff?wkpc2b') format('woff'),
+    url('#{$fonts-dir}/lander.svg?wkpc2b#lander') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

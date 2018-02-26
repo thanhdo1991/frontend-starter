@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420px" height="274px" viewBox="0 0 420 274" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Lndr-landing-OOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-210.000000, -1788.000000)">
+        <g id="Group-10" transform="translate(212.000000, 1789.000000)">
+            <g id="DIU_IOS0491" transform="translate(171.000000, 24.000000)">
+                <g id="_x36_4px_boxes">
+                    <rect id="Rectangle-path" x="0" y="0" width="270" height="270"></rect>
+                </g>
+                <g id="Production" transform="translate(21.055046, 44.110092)">
+                    <g id="Group" transform="translate(0.000000, 0.000000)">
+                        <rect id="Rectangle-4" fill="#FFFFFF" x="0" y="26.4862385" width="225.412844" height="158.53211"></rect>
+                        <path d="M2,25.4731709 L2,186.733945 L225.889908,186.733945 L225.889908,25.4731709 L2,25.4731709 Z M223.645683,184.469335 L4.24422485,184.469335 L4.24422485,27.7377804 L223.645683,27.7377804 L223.645683,184.469335 Z" id="Shape" fill="#008CFF" fill-rule="nonzero"></path>
+                        <polygon id="Rectangle-path" fill="#008CFF" fill-rule="nonzero" points="16.9020013 9.33412998 210.987907 9.33412998 210.987907 11.5987395 16.9020013 11.5987395"></polygon>
+                        <polygon id="Rectangle-path" fill="#008CFF" fill-rule="nonzero" points="33.7790366 0 194.110872 0 194.110872 2.26460951 33.7790366 2.26460951"></polygon>
+                    </g>
+                </g>
+            </g>
+            <path d="M185.356495,272 L235,272 L143.422253,17.9329878 C139.262247,6.9176944 128.867994,-0.0889754018 117.275291,0.000853698199 C105.682587,0.101911436 95.4035699,7.2770108 91.5777473,17.9329878 L0,272 L47.8112588,272 L64.7278478,223.265468 L168.439906,223.265468 L185.356495,272 Z" id="Fill-10-Copy" stroke="#008CFF" stroke-width="2" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -43,22 +43,6 @@ html {
   }
 }
 
-.section-title {
-  margin-bottom: 60px;
-
-  @media #{$large} {
-    margin-bottom: 83px;
-  }
-
-  @media #{$small} {
-    margin-bottom: 35px;
-  }
-
-  @media #{$tiny} {
-    margin-bottom: 20px;
-  }
-}
-
 .grid-6 {
   @include grid-column(6);
 

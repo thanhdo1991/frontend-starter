@@ -31,4 +31,14 @@
     setCustomBgColor(el);
   });
 
+  // Slider.
+  $('.slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    prevArrow: "<a href='#' class='slick-prev invisible'>Prev</a>",
+    nextArrow: "<a href='#' class='slick-next invisible'>Next</a>",
+  });
+
 }( jQuery ));

@@ -62,8 +62,6 @@
           text-indent: 160px;
           transition: all .3s ease;
           white-space: nowrap;
-          // margin-top: 17px;
-          // margin-bottom: 25px;
 
           @media #{$small} {
             height: 25px;
@@ -77,14 +75,13 @@
   }
 
   .logo-second {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
     float: left;
-    padding: 8px 0;
-    line-height: 0;
-    margin-left: 18px;
-
-    img {
-      height: 38px;
-    }
+    height: 38px;
+    margin: 8px 0 8px 18px;
+    width: 50px;
   }
 
   .container {

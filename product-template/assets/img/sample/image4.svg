@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="455px" height="372px" viewBox="0 0 455 372" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="255" height="350" rx="5"></rect>
+        <filter x="-2.7%" y="-21.8%" width="105.5%" height="143.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15050385 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M411.502046,1.21604207e-14 C426.394551,1.26020911e-14 438.467312,12.0721217 438.467312,26.9711538 L438.467312,26.9711538 C438.467312,41.8669108 426.390426,53.9423077 411.498498,53.9423077 L26.7112957,53.9423077 C11.8168309,53.9423077 0.129049663,41.870186 0.605507244,26.9909081 L0.606772368,26.9513996 C1.08340828,12.0665526 13.5420424,3.58029326e-16 28.4350646,7.99715111e-16 L411.502046,1.21604207e-14 Z" id="path-3"></path>
+    </defs>
+    <g id="Lndr-landing-OOB" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-866.000000, -2268.000000)">
+        <g id="Group-16" transform="translate(874.000000, 2268.000000)">
+            <g id="Group-5" transform="translate(92.000000, 0.000000)">
+                <g id="Group-3">
+                    <g id="Rectangle-3">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <rect stroke="#168BEB" stroke-width="2" x="1" y="1" width="253" height="348" rx="5"></rect>
+                    </g>
+                </g>
+                <g id="Page-Lndr-illustration" transform="translate(41.610879, 51.063830)">
+                    <g id="Group-4" transform="translate(16.745903, 0.000000)" fill="#168BEB">
+                        <rect id="Rectangle-6-Copy-3" x="19.2835559" y="0" width="91.9862428" height="4.93164385"></rect>
+                        <rect id="Rectangle-6-Copy-6" x="28.9253339" y="9.8632877" width="72.3487303" height="4.93164385"></rect>
+                        <rect id="Rectangle-6-Copy-7" x="0" y="27.9459818" width="131.770965" height="1.06022311"></rect>
+                        <rect id="Rectangle-6-Copy-8" x="27.3183709" y="34.5215069" width="77.1342236" height="1.06022311"></rect>
+                    </g>
+                    <rect id="Rectangle-2" fill="#168BEB" x="60.703897" y="57.2391614" width="37.6782809" height="10.5998447"></rect>
+                    <g id="Group-2" transform="translate(0.000000, 118.718261)" fill="#168BEB">
+                        <rect id="Rectangle-7-Copy-2" x="0" y="0" width="77.021964" height="42.1751467"></rect>
+                        <g id="Group-3" transform="translate(96.277455, 7.769106)">
+                            <rect id="Rectangle-6-Copy-12" x="0" y="0" width="52.5800095" height="5.16258774"></rect>
+                            <rect id="Rectangle-6-Copy-13" x="0" y="14.4283397" width="63.0280671" height="1.10987228"></rect>
+                        </g>
+                    </g>
+                    <path d="M4.69601381,90.09868 L158.741795,90.09868" id="Line" stroke="#E4E4E4" stroke-linecap="square"></path>
+                </g>
+            </g>
+            <g id="Group-12" filter="url(#filter-2)" transform="translate(0.000000, 310.000000)">
+                <g id="button">
+                    <g id="Rectangle-Copy-3">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <path stroke="#168BEB" stroke-width="1" d="M411.502046,0.5 L28.4350646,0.5 C13.8121345,0.5 1.5745193,12.3521498 1.10651622,26.9674022 L1.1052511,27.0069107 C0.637770584,41.605844 12.1011701,53.4423077 26.7112957,53.4423077 L411.498498,53.4423077 C426.115157,53.4423077 437.967312,41.5898946 437.967312,26.9711538 C437.967312,12.3493802 426.119525,0.5 411.502046,0.5 Z"></path>
+                    </g>
+                    <path d="M193.7924,0.0759490635 C194.302566,0.218283649 193.47775,54.1056972 193.7924,54.0182568 C194.107049,53.9308163 26.6625894,54.0072438 26.6625894,54.0072438 C11.7627405,54.0133261 -0.144703543,41.9293462 0.0667009705,27.0075944 L0.0655814936,27.0866114 C0.276926859,12.1690345 12.5491985,0.0675241296 27.4579759,0.0578716184 C27.4579759,0.0578716184 193.282233,-0.066385522 193.7924,0.0759490635 Z" id="Rectangle-Copy-3" fill="#168BEB"></path>
+                </g>
+                <text id="43%" font-family="Montserrat-SemiBold, Montserrat" font-size="16" font-weight="500" fill="#FFFFFF">
+                    <tspan x="147.165172" y="33.5288462">43%</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

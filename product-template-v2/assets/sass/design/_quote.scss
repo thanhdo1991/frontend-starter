@@ -1,0 +1,33 @@
+.block-quote {
+  max-width: 550px;
+  margin: 0 auto;
+
+  span {
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .quote {
+    margin-bottom: 9px;
+  }
+
+  blockquote {
+    color: $color-black;
+
+    &:before {
+      margin-right: -7px;
+    }
+
+    &:after {
+      margin-left: -7px;
+    }
+  }
+
+  .image {
+    margin-bottom: 37px;
+
+    img {
+      max-height: 71px;
+    }
+  }
+}
