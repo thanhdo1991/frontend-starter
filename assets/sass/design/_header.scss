@@ -94,7 +94,9 @@
 }
 
 .feature-logo {
-  img {
-    max-height: 83px;
-  }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 83px;
+  margin-bottom: 7px;
 }
