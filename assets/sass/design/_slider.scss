@@ -1,5 +1,19 @@
 .slider {
-  padding: 0 122px;
+  max-width: 1380px;
+  padding: 0 70px;
+  margin: 0 auto;
+
+  @media #{$large} {
+    padding: 0 102px;
+  }
+
+  @media #{$tablet} {
+    padding: 0 50px;
+  }
+
+  @media #{$small} {
+    padding: 0 40px;
+  }
 
   &-item {
     width: 100%;
@@ -10,5 +24,41 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 58.1%;
+
+    @media #{$medium} {
+      padding-bottom: 70%;
+    }
+
+    @media #{$small} {
+      padding-bottom: 80%;
+    }
+
+    @media #{$tiny} {
+      padding-bottom: 90%;
+    }
+  }
+
+  .slick-prev {
+    left: 10px;
+
+    @media #{$tablet} {
+      left: 0;
+    }
+  }
+
+  .slick-next {
+    right: 10px;
+
+    @media #{$tablet} {
+      right: 0;
+    }
+  }
+
+  .slick-arrow {
+    @media #{$small} {
+      &:before {
+        font-size: 20px;
+      }
+    }
   }
 }

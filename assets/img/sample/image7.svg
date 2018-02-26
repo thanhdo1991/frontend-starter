@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="229px" viewBox="0 0 200 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M112.415424,3.37776652e-15 C116.556823,3.50264997e-15 119.91409,3.36629279 119.91409,7.5 L119.91409,7.5 C119.91409,11.6421356 116.548182,15 112.408495,15 L7.43475244,15 C3.28952684,15 0.0345844899,11.6523772 0.16535564,7.5 L0.16535564,7.5 C0.295804252,3.35786438 3.75420992,1.01098996e-16 7.90022034,2.26121506e-16 L112.415424,3.37776652e-15 Z" id="path-1"></path>
+    </defs>
+    <g id="Lndr-custom-designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-700.000000, -632.000000)">
+        <g id="Group-6" transform="translate(700.000000, 632.000000)">
+            <g id="Group-Copy-2" opacity="0.2">
+                <g id="1.03-Header,-2-column-solid,-big-left">
+                    <rect id="Rectangle-7" stroke="#168BEB" x="1.5" y="24.5" width="197" height="1"></rect>
+                    <rect id="Rectangle-7-Copy" stroke="#168BEB" x="0.5" y="0.5" width="199" height="228" rx="3"></rect>
+                    <circle id="Oval-2" fill="#168BEB" cx="6" cy="6" r="1"></circle>
+                    <circle id="Oval-2" fill="#168BEB" cx="10" cy="6" r="1"></circle>
+                    <circle id="Oval-2" fill="#168BEB" cx="14" cy="6" r="1"></circle>
+                </g>
+            </g>
+            <g id="Group-12" transform="translate(40.000000, 112.000000)">
+                <g id="button">
+                    <g id="Rectangle-Copy-3">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <path stroke="#168BEB" stroke-width="1" d="M112.415424,0.5 L7.90022034,0.5 C4.02593521,0.5 0.787110988,3.64177296 0.665107871,7.51573874 C0.543338915,11.3822692 3.5681543,14.5 7.43475244,14.5 L112.408495,14.5 C116.274093,14.5 119.41409,11.3639421 119.41409,7.5 C119.41409,3.63941753 116.277665,0.5 112.415424,0.5 Z"></path>
+                    </g>
+                    <path d="M52.8636432,0.0207133809 C53.0028089,0.0595319043 52.7778115,14.7560992 52.8636432,14.7322518 C52.9494748,14.7084045 7.23141584,14.7292642 7.23141584,14.7292642 C3.19001215,14.7309142 -0.0394080313,11.4306955 0.0180423303,7.37648261 L0.0180423303,7.37648261 C0.0756098302,3.31400344 3.41327275,0.0184223586 7.49358939,0.0157810042 C7.49358939,0.0157810042 52.7244774,-0.0181051424 52.8636432,0.0207133809 Z" id="Rectangle-Copy-3" fill="#168BEB"></path>
+                </g>
+            </g>
+            <rect id="Rectangle-5" stroke="#D0E8FB" x="25.5" y="6.5" width="164" height="12" rx="3"></rect>
+            <text id="lndr.co" font-family="Montserrat-Regular, Montserrat" font-size="7" font-weight="normal" fill="#168BEB">
+                <tspan x="30.0055" y="15">lndr.co</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
