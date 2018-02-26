@@ -2,6 +2,10 @@
   margin: 0 auto;
   max-width: 850px;
 
+  &-small {
+    max-width: 720px;
+  }
+
   h2 {
     margin-bottom: 17px;
   }

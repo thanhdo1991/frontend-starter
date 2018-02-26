@@ -39,6 +39,15 @@ h3 {
   }
 }
 
+h4 {
+  font-size: em(20px);
+  font-weight: 400;
+
+  @media #{$medium} {
+    font-size: 1em;
+  }
+}
+
 p {
   margin: 0 0 $small-spacing;
   font-weight: 300;
@@ -65,4 +74,33 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
+}
+
+blockquote {
+  font-size: 27px;
+  line-height: 40px;
+  margin: 0;
+  font-weight: 500;
+
+  // @media #{$medium} {
+  //   font-size: 1.5em;
+  //   line-height: 1.3;
+  // }
+
+  // @media #{$small} {
+  //   font-size: 1.8em;
+  // }
+
+  &:before {
+    content: '\201c';
+  }
+
+  &:after {
+    content: '\201d';
+  }
+
+  p {
+    display: inline;
+    font-weight: inherit;
+  }
 }

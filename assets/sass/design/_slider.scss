@@ -1,0 +1,14 @@
+.slider {
+  padding: 0 122px;
+
+  &-item {
+    width: 100%;
+  }
+
+  .image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 58.1%;
+  }
+}

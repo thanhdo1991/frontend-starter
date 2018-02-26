@@ -98,3 +98,35 @@
     }
   }
 }
+
+.grid-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+  padding: 0 5%;
+
+  &-item {
+    width: calc(100% / 3);
+    padding: 0 50px;
+  }
+
+  .image {
+    max-width: 200px;
+    margin: 0 auto 40px;
+  }
+
+  article {
+    h3 {
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.71;
+      font-weight: 400;
+    }
+  }
+}
