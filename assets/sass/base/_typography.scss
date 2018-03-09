@@ -15,6 +15,35 @@ h6 {
   font-size: modular-scale(1);
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: em(40px);
+
+  @media #{$medium} {
+    font-size: 2.2em;
+  }
+}
+
+h3 {
+  font-size: em(30px);
+
+  @media #{$medium} {
+    font-size: 1.5em;
+  }
+
+  @media #{$small} {
+    font-size: 1.8em;
+  }
+}
+
+h4 {
+  font-size: em(19px);
+
+  @media #{$small} {
+    font-size: 1.5em;
+  }
 }
 
 p {
@@ -23,7 +52,7 @@ p {
 
 a {
   color: $action-color;
-  text-decoration-skip: ink;
+  text-decoration: none;
   transition: color $base-duration $base-timing;
 
   &:hover {

@@ -19,4 +19,25 @@
     });
   });
 
+  // Background color.
+  var setCustomBgColor = function(el) {
+    el = $(el);
+    var color = el.data('background-color');
+    color != "" && (color = "#" + color);
+    el.css('background-color', color);
+  }
+
+  $("[data-background-color]").each(function(k, el) {
+    setCustomBgColor(el);
+  });
+
+  var $iconMenu = $(".js-icon-menu"),
+    dropMenu = function (el) {
+      el = $(el);
+      el.parents(".menu-responsive").toggleClass("open");
+    };
+  $iconMenu.on("click", function () {
+    dropMenu(this);
+  })
+
 }( jQuery ));

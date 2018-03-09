@@ -7,3 +7,60 @@ $fa-font-path : "../fonts/font-awesome" !default;
 $brand-primary : #CCCCCC;
 
 $body-bg-color : #DDDDDD;
+
+// Breakpoints
+$tiny-breakpoint: 414px;
+$small-breakpoint: 580px;
+$tablet-breakpoint: 767px;
+$medium-breakpoint: 900px;
+$large-breakpoint: 1240px;
+$xlarge-breakpoint: 1440px;
+
+// Media queries
+$xlarge: "only screen and (min-width: #{$xlarge-breakpoint})";
+$large: "only screen and (min-width: #{$large-breakpoint})";
+$medium: "only screen and (max-width: #{$medium-breakpoint})";
+$tablet: "only screen and (max-width: #{$tablet-breakpoint})";
+$small: "only screen and (max-width: #{$small-breakpoint})";
+$tiny: "only screen and (max-width: #{$tiny-breakpoint})";
+
+$gutter-width: 40px;
+$gutter-medium-width: 30px;
+$gutter-small-width: 20px;
+$container: 1420px;
+$container-xlarge: 1500px;
+
+// Neat settings
+$neat-grid: (
+  columns: 12,
+  gutter: $gutter-width
+);
+
+$medium-grid: (
+  columns: 12,
+  gutter: $gutter-medium-width
+);
+
+$small-grid: (
+  columns: 6,
+  gutter: $gutter-small-width
+);
+
+$touching-grid: (
+  columns: 1,
+  gutter: 0
+);
+
+$page-width: $container + (2 * $gutter-width);
+$page-width-xlarge: $container-xlarge + (2 * $gutter-width);
+
+$montserrat: (
+  "Montserrat",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica",
+  "Roboto",
+  "Noto",
+  "Ubuntu",
+  sans-serif
+);

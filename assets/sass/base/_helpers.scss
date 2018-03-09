@@ -1,0 +1,21 @@
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-black {
+  color: $base-font-color;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.text-small,
+%text-small {
+  font-size: 13px;
+  line-height: 1.54;
+}

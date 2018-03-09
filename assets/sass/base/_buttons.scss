@@ -1,27 +1,26 @@
 #{$all-buttons} {
+  @include button-bg($action-color, $color-blue-hover);
+  -webkit-font-smoothing: antialiased;
   appearance: none;
-  background-color: $action-color;
+  border-radius: 0;
   border: 0;
-  border-radius: $base-border-radius;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 700;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: 19px 33px 18px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
-  &:hover {
-    background-color: shade($action-color, 20%);
-    color: #fff;
+  @media #{$large} {
+    min-width: 161px;
   }
 
   &:focus {
@@ -31,10 +30,10 @@
 
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: .5;
+  }
 
-    &:hover {
-      background-color: $action-color;
-    }
+  &.white {
+    @include button-bg($color-white, $color-gray-f1, $color-black);
   }
 }
