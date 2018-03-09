@@ -166,7 +166,11 @@
 
   &--three-columns {
     .tile-inner {
-      padding-top: 60px;
+      padding: 50px;
+
+      @media #{$large} {
+        padding: 60px 70px 60px 90px;
+      }
 
       @media #{$medium} {
         padding-top: 35px;
