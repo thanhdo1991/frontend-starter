@@ -1,0 +1,35 @@
+html {
+  @media #{$small} {
+    font-size: 80%;
+  }
+}
+
+// Basic Layout Considerations
+.container {
+  @include grid-container;
+  margin: 0 auto;
+  max-width: $page-width;
+
+  @media #{$xlarge} {
+    max-width: $page-width-xlarge;
+  }
+}
+
+body > section {
+  @include clearfix();
+  padding-bottom: 36px;
+  padding-top: 37px;
+
+  .section-header,
+  .section-title {
+    text-align: center;
+  }
+}
+
+.grid-12 {
+  @include grid-column(12);
+
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
+}

@@ -1,0 +1,39 @@
+#{$all-buttons} {
+  @include button-bg($action-color, $color-blue-hover);
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 19px 33px 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  @media #{$large} {
+    min-width: 161px;
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  &.white {
+    @include button-bg($color-white, $color-gray-f1, $color-black);
+  }
+}

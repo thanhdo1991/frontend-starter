@@ -1,0 +1,254 @@
+.tile {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  transition: all .3s ease;
+  width: 100%;
+
+  &[overlay="true"]:after {
+    @include position(absolute, 0);
+    display: block;
+    content: '';
+    background: linear-gradient(to bottom, rgba(111, 101, 83, .2) 0%,rgba(51, 51, 51, .8) 100%);
+    opacity: .85;
+  }
+
+  @media #{$large} {
+    min-height: 754px;
+  }
+
+  @media #{$medium} {
+    min-height: calc(100vw / 1.5);
+  }
+
+  @media #{$tablet} {
+    min-height: calc(100vw / 1.7);
+  }
+
+  &-inner {
+    @include position(absolute, 0);
+    padding: 87px 70px 80px 90px;
+    z-index: 1;
+    max-width: $page-width;
+    margin: 0 auto;
+    width: 100%;
+    transition: all .3s ease;
+
+    @media #{$xlarge} {
+      max-width: $page-width-xlarge;
+    }
+
+    @media #{$medium} {
+      padding: 60px $gutter-width;
+    }
+
+    @media #{$small} {
+      padding: 40px $gutter-small-width;
+      position: static;
+    }
+  }
+
+  article {
+    max-width: 480px;
+
+    @media #{$small} {
+      max-width: 100%;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+    }
+  }
+
+  .action {
+    padding-top: 16px;
+  }
+
+  &:first-of-type {
+    .tile-inner {
+      padding-left: $gutter-width;
+
+      @media #{$tablet} {
+        padding-right: $gutter-width;
+      }
+
+      @media #{$small} {
+        padding-left: $gutter-small-width;
+        padding-right: $gutter-small-width;
+      }
+    }
+  }
+
+  &:last-of-type {
+    .tile-inner {
+      padding-right: $gutter-width;
+
+      @media #{$tablet} {
+        padding-left: $gutter-width;
+      }
+
+      @media #{$small} {
+        padding-left: $gutter-small-width;
+        padding-right: $gutter-small-width;
+      }
+    }
+  }
+}
+
+.tiles {
+  align-content: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  @media #{$tablet} {
+    flex-direction: column;
+  }
+
+  &--two-columns {
+    .tile-inner {
+      max-width: $page-width / 2;
+
+      @media #{$xlarge} {
+        max-width: $page-width-xlarge / 2;
+      }
+    }
+
+    .tile {
+      min-height: 500px;
+
+      @media #{$large} {
+        min-height: 635px;
+      }
+
+      @media #{$medium} {
+        min-height: calc(100vw / 1.75);
+      }
+
+      @media #{$tablet} {
+        min-height: calc(100vw / 1.7);
+      }
+
+      h2,
+      h3,
+      h4 {
+        line-height: 1.33;
+        margin-bottom: 14px;
+      }
+
+      article {
+        p {
+          @extend %text-small;
+        }
+      }
+
+      .action {
+        padding-top: 11px;
+      }
+
+      &:nth-child(1) {
+        .tile-inner {
+          left: auto;
+        }
+      }
+
+      &:nth-child(2) {
+        .tile-inner {
+          right: auto;
+        }
+      }
+    }
+  }
+
+  &--three-columns {
+    .tile-inner {
+      padding: 50px;
+
+      @media #{$large} {
+        padding: 60px 70px 60px 90px;
+      }
+
+      @media #{$medium} {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        position: static;
+      }
+
+      @media #{$tablet} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+
+    .tile {
+      min-height: 350px;
+
+      @media #{$large} {
+        min-height: 400px;
+      }
+
+      @media #{$medium} {
+        min-height: calc(100vw / 2.25);
+      }
+
+      @media #{$tablet} {
+        min-height: calc(100vw / 1.7);
+      }
+
+      h2,
+      h3,
+      h4 {
+        line-height: 1.58;
+      }
+
+      article {
+        p {
+          @extend %text-small;
+        }
+      }
+
+      .action {
+        padding-top: 11px;
+      }
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        .tile-inner {
+          max-width: calc((#{$page-width} - (100vw / 3 - 3px)) / 2);
+
+          @media #{$xlarge} {
+            max-width: calc((#{$page-width-xlarge} - (100vw / 3 - 3px)) / 2);
+          }
+
+          @media #{$tablet} {
+            max-width: 100%;
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        .tile-inner {
+          left: auto;
+
+          @media #{$tablet} {
+            left: 0;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        .tile-inner {
+          right: auto;
+
+          @media #{$tablet} {
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
