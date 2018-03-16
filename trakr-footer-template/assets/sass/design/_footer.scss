@@ -1,0 +1,137 @@
+.footer {
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  @media #{$small} {
+    padding: 15px 0;
+  }
+
+  > .container {
+    @include grid-container;
+
+    .left-content {
+      float: left;
+      width: calc(50% - 10px);
+      margin-right: 20px;
+
+      @media #{$small} {
+        width: calc(60% - 5px);
+        margin-right: 10px;
+      }
+
+      @media #{$tiny} {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    .right-content {
+      float: right;
+      padding: 38px 0 10px;
+      width: calc(50% - 10px);
+
+      @media #{$small} {
+        padding-top: 20px;
+        width: calc(40% - 5px);
+      }
+
+      @media #{$tiny} {
+        width: 100%;
+      }
+    }
+  }
+
+  .group-logo {
+    @include clearfix;
+    margin-bottom: 12px;
+  }
+
+  .intro {
+    font-size: 9px;
+    line-height: 1.78;
+    font-weight: 300;
+  }
+
+  .logo {
+    float: left;
+
+    h1 {
+      font-size: em(26px);
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+
+      @media #{$small} {
+        font-size: 16px;
+      }
+
+      > a {
+        display: block;
+        margin: 10px 0;
+        outline: none;
+        color: $color-black;
+
+        @media #{$small} {
+          margin: 0;
+        }
+
+        &.image {
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 22px;
+          max-width: 70px;
+          overflow: hidden;
+          text-indent: 80px;
+          transition: all .3s ease;
+          white-space: nowrap;
+
+          @media #{$small} {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .logo-second {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    height: 26px;
+    margin: 8px 0 8px 14px;
+    width: 90px;
+  }
+
+  .main-navigation {
+    text-align: right;
+
+    @media #{$tiny} {
+      text-align: center;
+    }
+
+    li {
+      margin-left: 9px;
+
+      @media #{$small} {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 0;
+      }
+
+      @media #{$tiny} {
+        display: inline-block;
+        margin-left: 15px;
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      font-size: 9px;
+      line-height: 1.78;
+      color: $color-white;
+      font-weight: 300;
+    }
+  }
+}

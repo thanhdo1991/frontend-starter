@@ -1,0 +1,80 @@
+.header {
+  padding-bottom: 8px;
+  padding-top: 19px;
+
+  @media #{$small} {
+    padding: 15px 0;
+  }
+
+  > .container {
+    @include grid-container;
+
+    .left-content {
+      float: left;
+    }
+
+    .right-content {
+      float: right;
+      padding: 16px 0;
+
+      @media #{$small} {
+        padding: 12px 0px 11px;
+      }
+    }
+  }
+
+  .logo {
+    padding: 0 11px;
+
+    h1 {
+      font-size: em(46px);
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+
+      @media #{$small} {
+        font-size: 36px;
+      }
+
+      > a {
+        display: block;
+        margin: 10px 0;
+        outline: none;
+
+        @media #{$small} {
+          margin: 0;
+        }
+
+        &.image {
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 35px;
+          max-width: 150px;
+          overflow: hidden;
+          text-indent: 160px;
+          transition: all .3s ease;
+          white-space: nowrap;
+          margin-top: 17px;
+          margin-bottom: 25px;
+
+          @media #{$small} {
+            height: 25px;
+            max-width: 100px;
+            text-indent: 120px;
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .main-navigation {
+    float: right;
+  }
+}
