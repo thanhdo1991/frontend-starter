@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size: em(36px);
+  font-size: em(40px);
 
   @media #{$medium} {
     font-size: 1.8em;
@@ -42,14 +42,37 @@ h2 {
   }
 }
 
+h3 {
+  font-size: em(30px);
+  font-weight: 900;
+
+  @media #{$medium} {
+    font-size: 1.5em;
+  }
+
+  @media #{$small} {
+    font-size: 1.8em;
+  }
+}
+
+h4 {
+  font-family: $lato;
+  font-size: em(22px);
+
+  @media #{$small} {
+    font-size: 1.7em;
+  }
+}
+
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 18px;
 }
 
 a {
   color: $action-color;
   text-decoration-skip: ink;
   transition: color $base-duration $base-timing;
+  text-decoration: none;
 
   &:hover {
     color: shade($action-color, 25%);

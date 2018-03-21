@@ -1,0 +1,73 @@
+.grid-image {
+  @media #{$tablet} {
+    padding-top: 25px;
+  }
+
+  &-item {
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 100%;
+
+    .image {
+      margin-right: 20px;
+      width: 141px;
+      line-height: 0;
+      float: left;
+
+      @media #{$small} {
+        width: 120px;
+      }
+
+      @media #{$tiny} {
+        float: none;
+        margin-bottom: 15px;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+
+        @media #{$small} {
+          width: auto;
+        }
+      }
+    }
+
+    article {
+      float: left;
+      width: calc(100% - 161px);
+
+      @media #{$small} {
+        width: calc(100% - 140px);
+      }
+
+      @media #{$tiny} {
+        width: 100%;
+        float: none;
+      }
+
+      p {
+        margin-bottom: 2px;
+      }
+
+      h4 {
+        color: $action-color;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 26px;
+
+        @media #{$tiny} {
+          margin-bottom: 15px;
+        }
+      }
+
+      a {
+        word-break: break-word;
+
+        @media #{$large} {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

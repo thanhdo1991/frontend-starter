@@ -5,71 +5,32 @@ html {
 }
 
 // Basic Layout Considerations
-body > section {
+.page-wrapper {
+  align-content: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  min-height: 100%;
+
+  > section {
     @include clearfix();
-    padding-bottom: 36px;
-    padding-top: 37px;
+    padding-bottom: 33px;
+    padding-top: 33px;
 
     > .container {
-        @include grid-container;
-        margin: 0 auto;
-        max-width: $page-width;
+      @include grid-container;
+      margin: 0 auto;
+      max-width: $page-width;
     }
-
-    .section-header,
-    .section-title {
-        text-align: center;
-    }
-}
-
-.grid-3 {
-    @include grid-column(3);
-
-    @media #{$medium} {
-        @include grid-column(6, $medium-grid);
-    }
-}
-
-.grid-4 {
-    @include grid-column(4);
-
-    @media #{$medium} {
-        @include grid-column(6, $medium-grid);
-    }
-
-    @media #{$small} {
-        @include grid-column(6, $small-grid);
-    }
+  }
 }
 
 .grid-12 {
-    @include grid-column(12);
+  @include grid-column(12);
 
-    @media #{$small} {
-        @include grid-column(6, $small-grid);
-    }
-}
-
-#header {
-    padding-top: 40px;
-
-    @media #{$large} {
-        padding-top: 50px;
-    }
-
-    @media #{$small} {
-        padding-top: 20px;
-    }
-}
-
-#footer {
-    padding-bottom: 30px;
-
-     @media #{$large} {
-        padding-bottom: 60px;
-    }
-
-    @media #{$small} {
-        padding-top: 20px;
-    }
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
 }
