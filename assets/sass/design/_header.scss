@@ -1,5 +1,3 @@
-$navigation-height: 50px;
-
 .logo-wrap {
   .page-wrapper & {
     padding: 10px 0 12px;
@@ -38,9 +36,6 @@ $navigation-height: 50px;
 
         @media #{$small} {
           height: 42px;
-          // margin: 8px 0px;
-          max-width: 200px;
-          text-indent: 220px;
         }
       }
     }

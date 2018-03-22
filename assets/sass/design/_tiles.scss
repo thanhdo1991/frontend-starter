@@ -16,9 +16,19 @@
     padding-bottom: 87%;
   }
 
+  &[overlay="true"]:after {
+    @include position(absolute, 0);
+    display: block;
+    content: '';
+    background: linear-gradient(to bottom, rgba(111, 101, 83, .2) 0%,rgba(51, 51, 51, .8) 100%);
+    opacity: .85;
+    z-index: 1;
+  }
+
   article {
     @include position(absolute, null 0 0);
     padding: 35px 40px;
+    z-index: 2;
 
     @media #{$large} {
       padding: 42px 50px;

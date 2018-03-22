@@ -1,6 +1,6 @@
 {
-  "name": "ymca-event",
-  "description": "A simple event template for use with YMCA",
+  "name": "sj-template",
+  "description": "A simple template for use with SJ",
   "main": "index.html",
   "authors": [
     "Igor Putina"
