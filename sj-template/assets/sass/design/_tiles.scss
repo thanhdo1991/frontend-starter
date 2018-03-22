@@ -1,0 +1,74 @@
+.tile {
+  height: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding-bottom: 87%;
+  position: relative;
+  transition: all .3s ease;
+
+  @media #{$tablet} {
+    width: calc(50% - 10px);
+    padding-bottom: 50%;
+  }
+
+  @media #{$small} {
+    width: 100%;
+    padding-bottom: 87%;
+  }
+
+  &[overlay="true"]:after {
+    @include position(absolute, 0);
+    display: block;
+    content: '';
+    background: linear-gradient(to bottom, rgba(111, 101, 83, .2) 0%,rgba(51, 51, 51, .8) 100%);
+    opacity: .85;
+    z-index: 1;
+  }
+
+  article {
+    @include position(absolute, null 0 0);
+    padding: 35px 40px;
+    z-index: 2;
+
+    @media #{$large} {
+      padding: 42px 50px;
+    }
+
+    @media #{$medium} {
+      padding: 25px 30px;
+    }
+
+    h4,
+    p {
+      margin-bottom: 2px;
+    }
+
+    h4 {
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    p {
+      font-weight: 700;
+    }
+  }
+}
+
+.tiles {
+  align-content: stretch;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  @media #{$tablet} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media #{$small} {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

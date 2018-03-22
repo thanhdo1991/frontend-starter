@@ -1,0 +1,38 @@
+#{$all-buttons} {
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  background-color: $action-color;
+  border-radius: 0;
+  border: 0;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $ptsans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 169px;
+  padding: 13px 24px 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: shade($action-color, 20%);
+    color: $color-white;
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+}

@@ -1,0 +1,25 @@
+#second {
+  flex-grow: 1;
+  padding-bottom: 96px;
+
+  @media #{$medium} {
+    padding-bottom: 70px;
+  }
+
+  @media #{$small} {
+    padding-bottom: 50px;
+  }
+}
+
+#three {
+  flex-grow: 1;
+  padding-bottom: 76px;
+
+  @media #{$medium} {
+    padding-bottom: 60px;
+  }
+
+  @media #{$small} {
+    padding-bottom: 40px;
+  }
+}

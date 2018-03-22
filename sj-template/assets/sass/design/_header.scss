@@ -1,0 +1,47 @@
+.logo-wrap {
+  .page-wrapper & {
+    padding: 10px 0 12px;
+  }
+
+  .logo {
+    transition: all .3s ease;
+    margin: 9px 0;
+
+    @media #{$tablet} {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 > a {
+      outline: none;
+      text-decoration: none;
+
+      &.image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 56px;
+        margin: 0 auto;
+        max-width: 160px;
+        overflow: hidden;
+        text-indent: 180px;
+        transition: all .3s ease;
+        white-space: nowrap;
+
+        @media #{$tablet} {
+          height: 50px;
+        }
+
+        @media #{$small} {
+          height: 42px;
+        }
+      }
+    }
+  }
+}

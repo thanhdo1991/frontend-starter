@@ -1,0 +1,51 @@
+// Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+
+// Typography
+$base-font-family: $lato;
+$heading-font-family: $ptsansnarrow;
+$base-font-size: 16px;
+
+// Line height
+$base-line-height: 1.4;
+$heading-line-height: 1.8;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$green-light: #bbbc60;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+$color-white: #fff;
+$color-tundora: #464646;
+$color-mine-shaft: #282828;
+$color-wild-sand: #f4f4f4;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $green-light;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
