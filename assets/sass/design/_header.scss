@@ -7,7 +7,7 @@
     transition: all .3s ease;
     margin: 9px 0;
 
-    @media #{$small} {
+    @media #{$tablet} {
       margin: 0;
     }
 
@@ -33,6 +33,10 @@
         text-indent: 180px;
         transition: all .3s ease;
         white-space: nowrap;
+
+        @media #{$tablet} {
+          height: 50px;
+        }
 
         @media #{$small} {
           height: 42px;
