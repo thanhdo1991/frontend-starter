@@ -1,0 +1,96 @@
+// Typography mixins
+
+// Large Heading Style
+@mixin heading-large() {
+	font-size: 56px;
+	font-weight: normal;
+	text-transform: none;
+	line-height: 1;
+	margin-bottom: 20px;
+
+	@media #{$medium} {
+		font-size: 32px;
+	}
+
+	@media #{$small} {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+
+	@media #{$large} {
+		font-size: 70px;
+		font-weight: bold;
+	}
+}
+
+// Medium Heading Style
+@mixin heading-medium() {
+	font-size: 26px;
+	margin-bottom: 16px;
+	text-transform: none;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: bold;
+
+	@media #{$medium} {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+}
+
+// Small Heading Style
+@mixin heading-small() {
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-bottom: 16px;
+	text-transform: none;
+	line-height: 1;
+	margin-bottom: 20px;
+	font-weight: 400;
+
+	@media #{$medium} {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.2;
+	}
+}
+
+// Large Paragraph Style
+@mixin paragraph-large() {
+	font-size: 16px;
+	line-height: 1.8;
+	font-weight: 300;
+	margin-bottom: 40px;
+
+	a,
+	a:link,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	@media #{$medium} {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+
+	@media #{$small} {
+		font-size: 13px;
+	}
+}
+
+// Medium Paragraph Style
+@mixin paragraph-medium() {
+	font-size: 14px;
+	line-height: 1.44;
+	margin-bottom: 20px;
+
+	a,
+	a:link,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	@media #{$small} {
+		font-size: 13px;
+	}
+}

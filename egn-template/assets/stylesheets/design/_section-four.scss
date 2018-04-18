@@ -1,0 +1,129 @@
+#four {
+	@include clearfix;
+	padding-top: 77px;
+
+	@media #{$medium} {
+		margin-bottom: 0;
+		padding-top: 30px;
+	}
+
+	@media #{$small} {
+		padding: 20px 0;
+	}
+
+	.blocks {
+		@include grid-container;
+
+		.block {
+			@include grid-column(4);
+
+			@media #{$medium} {
+				@include grid-column(12);
+			}
+
+			@media #{$tiny} {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.article {
+		@media #{$medium} {
+			padding-left: 180px;
+			position: relative;
+			min-height: 150px;
+		}
+
+		@media #{$small} {
+			padding-left: 100px;
+			min-height: 120px;
+		}
+
+		@media #{$tiny} {
+			padding-left: 0;
+			min-height: auto;
+    	}
+
+		h1, h2, h3, h4 {
+			@include heading-small();
+			text-align: center;
+			font-size: 18px;
+			margin-bottom: 40px;
+
+			@media #{$large} {
+				margin-bottom: 60px;
+			}
+
+			@media #{$medium} {
+				text-align: left;
+				margin-bottom: 16px;
+				font-size: 18px;
+				font-weight: 400;
+			}
+
+			@media #{$small} {
+				margin-bottom: 10px;
+			}
+
+			@media #{$tiny} {
+				margin-bottom: 20px;
+			}
+
+			a,
+			a:link,
+			a:visited {
+				font-weight: bold;
+			}
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.56;
+			margin-bottom: 20px;
+			padding: 0 20px;
+			text-align: center;
+
+			@media #{$medium} {
+				text-align: left;
+				padding: 0;
+				margin-bottom: 30px;
+			}
+
+			@media #{$small} {
+				font-size: 12px;
+				margin-bottom: 20px;
+			}
+
+			a,
+			a:link,
+			a:visited {
+				color: $blue;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+		}
+
+		.image-container {
+			@media #{$large} {
+				margin-bottom: 33px;
+			}
+
+			@media #{$medium} {
+				position: absolute;
+				left: 0;
+				top: 2px;
+				width: 140px;
+			}
+
+			@media #{$small} {
+				width: 80px;
+				margin-bottom: 20px;
+			}
+
+			@media #{$tiny} {
+				width: 100%;
+				position: static;
+			}
+		}
+	}
+}

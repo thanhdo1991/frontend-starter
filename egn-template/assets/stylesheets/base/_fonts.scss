@@ -1,0 +1,25 @@
+$fonts-dir: '../fonts';
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('#{$fonts-dir}/SuisseIntl-Regular-WebS.eot');
+  src: url('#{$fonts-dir}/SuisseIntl-Regular-WebS.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/SuisseIntl-Regular-WebS.woff2') format('woff2'),
+    url('#{$fonts-dir}/SuisseIntl-Regular-WebS.woff') format('woff'),
+    url('#{$fonts-dir}/SuisseIntl-Regular-WebS.ttf') format('truetype'),
+    url('#{$fonts-dir}/SuisseIntl-Regular-WebS.svg#fontawesomeregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseWorks';
+  src: url('#{$fonts-dir}/SuisseWorks-Regular-WebS.eot');
+  src: url('#{$fonts-dir}/SuisseWorks-Regular-WebS.eot?#iefix') format('embedded-opentype'),
+  url('#{$fonts-dir}/SuisseWorks-Regular-WebS.woff2') format('woff2'),
+  url('#{$fonts-dir}/SuisseWorks-Regular-WebS.woff') format('woff'),
+  url('#{$fonts-dir}/SuisseWorks-Regular-WebS.ttf') format('truetype'),
+  url('#{$fonts-dir}/SuisseWorks-Regular-WebS.svg#fontawesomeregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,45 @@
+$tiny-breakpoint: 420px;
+$small-breakpoint: 580px;
+$medium-breakpoint: 960px;
+$large-breakpoint: 1180px;
+
+// Media queries
+$large: "only screen and (min-width: #{$large-breakpoint})";
+$medium: "only screen and (max-width: #{$medium-breakpoint})";
+$small: "only screen and (max-width: #{$small-breakpoint})";
+$tiny: "only screen and (max-width: #{$tiny-breakpoint})";
+
+// Page spacing
+.page-wrapper {
+	@include clearfix();
+	@include prefixer(transition, padding $base-duration $base-timing, webkit moz spec);
+	width: 100%;
+	height: auto;
+	max-width: $page-max-width;
+	margin: 0 auto;
+	padding: 70px 40px;
+	display: block;
+	float: none;
+
+	@media #{$large} {
+		padding: 62px 50px 50px;
+	}
+
+	@media #{$medium} {
+		padding: 60px 30px;
+	}
+
+	@media #{$small} {
+		padding: 30px 10px;
+	}
+
+	> section {
+		@include clearfix();
+		width: 100%;
+	}
+}
+
+// Sections
+.section-container {
+	@include grid-container;
+}

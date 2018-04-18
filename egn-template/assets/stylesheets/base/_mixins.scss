@@ -1,0 +1,34 @@
+@mixin vertical-align($position: relative) {
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  position: $position;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin reset-vertical-align() {
+  -ms-transform: none;
+  -webkit-transform: none;
+  position: static;
+  top: auto;
+  transform: none;
+}
+
+// Makes it simple to introduce new button colors
+@mixin update-button-color($bg: $blue, $bgActive: $blue-light, $textColor: $white) {
+  background-color: $bg;
+  color: $textColor;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $bgActive;
+    color: $textColor;
+  }
+
+  &:disabled {
+    &:hover {
+      background-color: $bg;
+    }
+  }
+}

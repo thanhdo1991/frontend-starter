@@ -1,0 +1,39 @@
+#{$all-buttons} {
+  @include button-bg($color-yellow, $color-yellow-dark, $color-tuatara);
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  &.red {
+    @include button-bg($color-red, $color-red-dark);
+  }
+
+  &.big {
+    padding: 14px 40px 18px 36px;
+  }
+}
