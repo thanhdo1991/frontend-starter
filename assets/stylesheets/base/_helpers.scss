@@ -1,0 +1,33 @@
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-blue-light {
+    background-color: $blue-light;
+}
+
+.bg-dark {
+    background-color: $gray-cc;
+}
+
+.bg-light {
+    background-color: $gray-fa;
+}
+
+.bg-lighter {
+    background-color: $gray-f4;
+}
+
+.bg-alabaster {
+    background-color: $gray-f8;
+}
+
+.text-white {
+    color: $white;
+
+    a,
+    a:link,
+    a:visited {
+        color: $white;
+    }
+}

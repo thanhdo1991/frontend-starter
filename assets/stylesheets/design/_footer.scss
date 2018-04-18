@@ -1,0 +1,40 @@
+section.footer {
+	padding-top: 40px;
+	margin-bottom: 0;
+
+	@media #{$small} {
+		padding-top: 20px;
+	}
+
+	.navigation {
+		padding: 14px 3px;
+	}
+
+	nav ul {
+		@media #{$tiny} {
+
+		}
+
+		li {
+			margin-right: 28px;
+
+			@media #{$small} {
+
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			a,
+			a:link,
+			a:visited {
+				font-size: 20px;
+
+				@media #{$small} {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

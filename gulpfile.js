@@ -59,7 +59,7 @@ const browserSyncOptions = {
 // Styles
 
 gulp.task('sass:dev', () =>
-    gulp.src(`${dirs.dist}/sass/styles.scss`)
+    gulp.src(`${dirs.dist}/stylesheets/main.css.scss`)
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -82,7 +82,7 @@ gulp.task('sass:dev', () =>
 );
 
 gulp.task('sass:build', () =>
-    gulp.src(`${dirs.dist}/sass/styles.scss`)
+    gulp.src(`${dirs.dist}/stylesheets/main.css.scss`)
         .pipe(plumber())
         .pipe(sass({
             errLogToConsole : true,
@@ -126,7 +126,7 @@ gulp.task('bundle', ['sass:bundle']);
 // npm run dev | yarn dev
 gulp.task('dev', ['sass:dev', 'browser-sync'], () => {
     gulp.watch(`${dirs.dist}/js/**/*.js`, browserSync.reload);
-    gulp.watch(`${dirs.dist}/sass/**/*.scss`, ['sass:dev', browserSync.reload]);
+    gulp.watch(`${dirs.dist}/stylesheets/**/*.scss`, ['sass:dev', browserSync.reload]);
     gulp.watch('*.html', { readDelay: 500, verbose: true }, browserSync.reload);
 });
 

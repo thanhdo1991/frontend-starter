@@ -1,0 +1,68 @@
+// Default font stacks
+$sans-serif: Arial, Helvetica, -apple-system, BlinkMacSystemFont, sans-serif;
+$serif: "Libre Baskerville", Times, serif;
+
+// Font stack
+$font-stack-system: $sans-serif;
+
+// Neat grid settings
+$neat-grid: (
+  columns: 12,
+  gutter: 40px,
+);
+
+// Colors
+$color-base: #083441;
+$color-accent: #8026D1;
+$white: #ffffff;
+$color-light-gray: #C0C0C0;
+$page-color: $white;
+
+// Page settings
+$page-max-width: 1600px;
+
+// Button settings
+$button-paddings: 17px 45px 16px;
+$button-border-radius: 24px;
+$button-font-size: 12px;
+
+// Data background images should be expanded correctly by default
+[data-backgroundify],
+[data-background-image] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+[overlay="true"] {
+  $gardient-opacity: .2;
+  $gradient-black: rgba(0, 0, 0, $gardient-opacity);
+
+  .gradient {
+    background: $gradient-black;
+  }
+}
+
+$suisseintl: (
+  "SuisseIntl",
+  "Arial",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica",
+  "Roboto",
+  "Noto",
+  "Ubuntu",
+  sans-serif
+);
+
+$suisseworks: (
+  "SuisseWorks",
+  "Arial",
+  -apple-system,
+  BlinkMacSystemFont,
+  "Helvetica",
+  "Roboto",
+  "Noto",
+  "Ubuntu",
+  sans-serif
+);

@@ -1,0 +1,153 @@
+$gardient-opacity: 	.2;
+$gradient-orange: 	linear-gradient(312deg, rgba(#CCD35D, $gardient-opacity) 12%, rgba(#D92F14, $gardient-opacity) 96%);
+$gradient-purple:	  linear-gradient(223deg, rgba(#B95161, $gardient-opacity) 3%,  rgba(#703399, $gardient-opacity) 89%);
+$gradient-red:		  linear-gradient(137deg, rgba(#E21616, $gardient-opacity) 15%, rgba(#C4C476, $gardient-opacity) 86%);
+$gradient-black:	  linear-gradient(137deg, rgba(#000000, $gardient-opacity) 15%, rgba(#555555, $gardient-opacity) 86%);
+$gradient-default:  $gradient-black;
+
+$gardient-opacity-dark: .5;
+$gradient-black-dark:	linear-gradient(137deg, rgba(#000000, $gardient-opacity-dark) 15%, rgba(#555555, $gardient-opacity-dark) 86%);
+
+#one {
+	.left-container {
+		@include grid-column(7.5);
+
+		@media #{$medium} {
+			@include grid-column(12);
+		}
+	}
+
+	.right-container {
+		@include grid-column(4.5);
+
+		@media #{$medium} {
+			@include grid-column(12);
+		}
+	}
+}
+
+.large-block,
+.small-block {
+	background-color: #efefef;
+	padding: 0;
+	margin-bottom: 40px;
+	position: relative;
+	transition: height $base-duration $base-timing, width $base-duration $base-timing;
+
+	@media #{$small} {
+		margin-bottom: 20px;
+	}
+
+	.gradient {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: auto;
+		padding: 60px 40px;
+
+		@media #{$medium} {
+			position: static;
+			bottom: auto;
+			left: auto;
+			right: auto;
+			padding: 40px;
+		}
+
+		@media #{$large} {
+			padding: 80px 50px;
+		}
+	}
+
+	h1, h2, h3 {
+		@media #{$medium} {
+			text-align: center;
+		}
+
+		a,
+		a:link,
+		a:visited {
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
+
+	p {
+		@include paragraph-medium();
+
+		@media #{$medium} {
+			text-align: center;
+		}
+
+		a,
+		a:link,
+		a:visited {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+	}
+
+	.cta {
+		@include clearfix;
+
+		@media #{$medium} {
+			text-align: center;
+		}
+	}
+}
+
+
+.large-block {
+	height: 740px;
+
+	@media #{$large} {
+		height: 950px;
+	}
+
+	@media #{$medium} {
+		height: auto;
+
+		.content {
+			padding-top: 60px;
+		}
+	}
+
+	@media #{$large} {
+		.content {
+			padding: 80px 100px;
+		}
+	}
+
+	h1, h2, h3 {
+		@include heading-large();
+	}
+
+	p {
+		font-size: 18px;
+	}
+}
+
+.small-block {
+	height: 350px;
+
+	@media #{$large} {
+		height: 455px;
+	}
+
+	@media #{$medium} {
+		height: auto;
+	}
+
+
+	h1, h2, h3 {
+		@include heading-medium();
+	}
+}
