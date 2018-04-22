@@ -3,8 +3,9 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $font-stack-system;
+$base-font-family: $helvetica;
 $heading-font-family: $base-font-family;
+$base-font-size: 16px;
 
 // Line height
 $base-line-height: 1.5;
@@ -21,6 +22,43 @@ $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+
+$color-navy: #0c62ad;
+$color-dark-gray: #333;
+$color-white: #fff;
+$color-light-blue: #186ab1;
+$color-light-purple: #f27328;
+$color-gray-5c: #5c5c5c;
+$color-gray-d8: #d8d8d8;
+$color-gray-88: #888;
+$color-gray-ef: #efeded;
+$color-gray-f8: #f8f8f8;
+
+// MTV
+$color-dune: #322c26;
+$color-dark-brown: #36302a;
+$footer-brown: #cbab8c;
+
+$color-tuatara: #2f2e2c;
+$color-yellow: #f0b336;
+$color-yellow-dark: #d0941f;
+$color-keppel: #2fb2ab;
+$color-keppel-dark: #006160;
+$color-red: #bf2b45;
+$color-red-dark: #8d2838;
+$color-blue: #009bbb;
+$color-blue-dark: #00597a;
+$color-brown: #9a656c;
+$color-brown-dark: #bf2b45;
+$color-luxor-gold: #98942c;
+$color-luxor-gold-dark: #4c4a16;
+$color-orange: #d9852d;
+$color-orange-dark: #9d6120;
+// Bg color.
+$color-purple: #59136a;
+$color-gurkha: #959c72;
+$color-black: #201b17;
+$color-merlin: #36302a;
 
 // Font Colors
 $base-font-color: $dark-gray;

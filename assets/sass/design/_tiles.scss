@@ -1,0 +1,91 @@
+.tile {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &[overlay="true"]:before {
+    @include position(absolute, 0);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, $color-light-blue 56.87%);
+    content: '';
+    opacity: .5;
+    z-index: 1;
+  }
+
+  @media #{$medium} {
+    margin-bottom: 20px;
+  }
+
+  article {
+    color: $color-white;
+    height: 100%;
+    padding: 25px 25px 55px;
+    position: relative;
+    z-index: 2;
+
+    @media #{$large} {
+      padding: 37px 34px 63px;
+    }
+
+    h2 {
+      margin-bottom: 2px;
+    }
+
+    span {
+      display: block;
+      font-size: em(20px);
+      font-weight: 700;
+      margin-bottom: 30px;
+
+      @media #{$large} {
+        margin-bottom: 49px;
+      }
+
+      @media #{$medium} {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .action {
+    bottom: 25px;
+    left: 25px;
+    position: absolute;
+    right: 25px;
+    z-index: 3;
+
+    @media #{$large} {
+      bottom: 33px;
+      left: 34px;
+      right: 34px;
+    }
+
+    a {
+      color: $color-white;
+      font-size: em(20px);
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        color: shade($color-white, 20%);
+      }
+    }
+  }
+}
+
+.tiles {
+  align-content: stretch;
+  align-items: stretch;
+  clear: both;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+  @media #{$medium} {
+    flex-wrap: wrap;
+  }
+
+  @media #{$small} {
+    flex-direction: column;
+  }
+}

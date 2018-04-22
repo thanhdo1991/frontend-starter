@@ -1,6 +1,6 @@
 {
-  "name": "frontend-starter",
-  "description": "A simple starter template for easy frontend design and development",
+  "name": "ymca-event",
+  "description": "A simple event template for use with YMCA",
   "main": "index.html",
   "authors": [
     "Igor Putina"
@@ -12,7 +12,7 @@
     "drupal",
     "ffw"
   ],
-  "homepage": "https://github.com/preist/frontend-starter",
+  "homepage": "https://github.com/makehero/ymca-event",
   "private": true,
   "ignore": [
     "**/.*",

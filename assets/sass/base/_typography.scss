@@ -15,6 +15,31 @@ h6 {
   font-size: modular-scale(1);
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3em;
+
+  @media #{$medium} {
+    font-size: 2.4em;
+  }
+
+  @media #{$small} {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  font-size: em(36px);
+
+  @media #{$medium} {
+    font-size: 1.8em;
+  }
+
+  @media #{$small} {
+    font-size: 2em;
+  }
 }
 
 p {

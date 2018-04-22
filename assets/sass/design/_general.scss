@@ -1,3 +1,7 @@
 body {
-  background-color: #ffffff;
+  background-color: $color-white;
+}
+
+.no-image[data-background-color] {
+  color: $color-white;
 }

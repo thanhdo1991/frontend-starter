@@ -1,28 +1,23 @@
 #{$all-buttons} {
+  @include button-bg($color-yellow, $color-yellow-dark, $color-tuatara);
+  -webkit-font-smoothing: antialiased;
   appearance: none;
-  background-color: $action-color;
+  border-radius: 2px;
   border: 0;
-  border-radius: $base-border-radius;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1;
-  padding: $small-spacing $base-spacing;
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-
-  &:hover {
-    background-color: shade($action-color, 20%);
-    color: #fff;
-  }
 
   &:focus {
     outline: $focus-outline;
@@ -31,10 +26,34 @@
 
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: .5;
+  }
 
-    &:hover {
-      background-color: $action-color;
-    }
+  &.keppel {
+    @include button-bg($color-keppel, $color-keppel-dark);
+  }
+
+  &.red {
+    @include button-bg($color-red, $color-red-dark);
+  }
+
+  &.blue {
+    @include button-bg($color-blue, $color-blue-dark);
+  }
+
+  &.brown {
+    @include button-bg($color-brown, $color-brown-dark);
+  }
+
+  &.luxor-gold {
+    @include button-bg($color-luxor-gold, $color-luxor-gold-dark);
+  }
+
+  &.orange {
+    @include button-bg($color-orange, $color-orange-dark);
+  }
+
+  &.big {
+    padding: 14px 40px 18px 36px;
   }
 }
