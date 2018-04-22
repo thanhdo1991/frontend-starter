@@ -19,4 +19,16 @@
     });
   });
 
+  // Background color.
+  var setCustomBgColor = function(el) {
+    el = $(el);
+    var color = el.data('background-color');
+    color != "" && (color = "#" + color);
+    el.css('background-color', color);
+  }
+
+  $("[data-background-color]").each(function(k, el) {
+    setCustomBgColor(el);
+  });
+
 }( jQuery ));

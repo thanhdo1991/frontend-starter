@@ -13,8 +13,22 @@ h5,
 h6 {
   font-family: $heading-font-family;
   font-size: modular-scale(1);
+  font-weight: 500;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
+}
+
+h1 {
+  font-size: em(40px);
+  letter-spacing: -.7px;
+
+  @media #{$medium} {
+    font-size: 2.5em;
+  }
+
+  @media #{$small} {
+    font-size: 2.2em;
+  }
 }
 
 p {

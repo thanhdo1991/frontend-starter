@@ -1,0 +1,33 @@
+// Navigation style
+.navigation {
+  ul {
+    list-style: none;
+
+    > li {
+      float: left;
+      margin-right: 32px;
+
+      @media #{$tiny} {
+        display: inline-block;
+        float: none;
+        margin: 0 10px;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+        font-size: 16px;
+        text-decoration: none;
+        width: 100%;
+        line-height: 1.31;
+
+        @media #{$medium} {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

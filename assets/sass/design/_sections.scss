@@ -1,0 +1,16 @@
+.section-title {
+  color: $color-black;
+  margin-bottom: 45px;
+
+  @media #{$medium} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$small} {
+    margin-bottom: 30px;
+  }
+
+  @media #{$large} {
+    margin-bottom: 65px;
+  }
+}

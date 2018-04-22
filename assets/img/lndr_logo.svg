@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="64px" viewBox="0 0 50 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lndr-Text-heavy-pages" transform="translate(-165.000000, -90.000000)" fill="#FFFFFF">
+            <g id="logo" transform="translate(160.000000, 90.000000)">
+                <path d="M39.6625313,35 L46,35 L34.3092238,2.30755358 C34.3092238,2.30755358 34.3033394,2.29021524 34.2900995,2.2540937 C33.7781592,0.8901445 32.4512333,-0.0114490407 30.9713137,0.000109850871 C29.4913941,0.0131136039 28.1791791,0.936380066 27.6907762,2.30755358 L27.6907762,2.30755358 L16,35 L22.1035649,35 L24.2631295,28.7290124 L37.5029667,28.7290124 L39.6625313,35 Z" id="Fill-10-Copy"></path>
+                <rect id="Rectangle" x="13" y="42" width="36" height="1"></rect>
+                <text id="Lndr.co" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal">
+                    <tspan x="4.555" y="63">Lndr.co</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

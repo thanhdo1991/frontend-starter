@@ -1,0 +1,38 @@
+.text {
+  &--center {
+    text-align: center;
+  }
+
+  &--small {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+}
+
+.paragraphs--small-spacing {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.bg {
+  &--white {
+    background-color: $color-white;
+  }
+
+  &--blue {
+    background-color: $color-blue;
+  }
+
+  &--black {
+    background-color: $color-gray-2e;
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}

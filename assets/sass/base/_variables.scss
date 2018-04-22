@@ -3,11 +3,12 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $font-stack-system;
+$base-font-family: $montserrat;
 $heading-font-family: $base-font-family;
+$base-font-size: 16px;
 
 // Line height
-$base-line-height: 1.5;
+$base-line-height: 1.65;
 $heading-line-height: 1.2;
 
 // Other Sizes
@@ -22,8 +23,25 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 
+$color-navy: #0c62ad;
+$color-dark-gray: #333;
+
+$color-light-blue: #186ab1;
+$color-light-purple: #f27328;
+$color-gray-5c: #5c5c5c;
+$color-gray-d8: #d8d8d8;
+$color-gray-88: #888;
+$color-gray-ef: #efeded;
+$color-gray-f8: #f8f8f8;
+$color-gray-2e: #2e2e2e;
+$color-white: #fff;
+$color-black: #000;
+
+// Bg color.
+$color-blue: #008cff;
+
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $color-gray-2e;
 $action-color: $blue;
 
 // Border

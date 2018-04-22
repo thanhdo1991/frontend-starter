@@ -1,0 +1,93 @@
+// Footer related styles
+.footer {
+  padding: 29px 0 25px;
+
+  @media #{$small} {
+    padding: 25px 0 22px;
+  }
+
+  @media #{$tiny} {
+    text-align: center;
+  }
+
+  .logo {
+    color: $color-white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+
+    &.image {
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 34px;
+      max-width: 100px;
+      overflow: hidden;
+      text-indent: 110px;
+
+      @media #{$tiny} {
+        background-position: center center;
+        margin: 0 auto;
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-white;
+    }
+  }
+
+  .branding {
+    @include grid-column(6);
+    padding-left: 28px;
+
+    @media #{$medium} {
+      padding-left: 0;
+    }
+
+    @media #{$small} {
+      @include grid-column(2, $small-grid);
+    }
+
+    @media #{$tiny} {
+      @include grid-column(6, $small-grid);
+      margin-bottom: 15px;
+    }
+  }
+
+  .navigation {
+    @include grid-column(6);
+    padding-top: 7px;
+
+    @media #{$small} {
+      @include grid-column(4, $small-grid);
+    }
+
+    @media #{$tiny} {
+      @include grid-column(6, $small-grid);
+    }
+
+    ul {
+      float: right;
+
+      @media #{$tiny} {
+        float: none;
+      }
+
+      > li  {
+        a {
+          color: $color-white;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: darken($color-white, 15%);
+          }
+        }
+      }
+    }
+  }
+}
