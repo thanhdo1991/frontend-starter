@@ -5,6 +5,7 @@ html {
   line-height: $base-line-height;
 }
 
+%heading,
 h1,
 h2,
 h3,
@@ -19,10 +20,18 @@ h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 5em;
+
+  @media #{$large} {
+    font-size: 6em;
+  }
+
+  @media #{$xlarge} {
+    font-size: em(130px);
+  }
 
   @media #{$medium} {
-    font-size: 2.4em;
+    font-size: 4em;
   }
 
   @media #{$small} {
@@ -31,14 +40,27 @@ h1 {
 }
 
 h2 {
-  font-size: em(36px);
+  font-size: em(62px);
 
   @media #{$medium} {
-    font-size: 1.8em;
+    font-size: 3em;
   }
 
   @media #{$small} {
     font-size: 2em;
+  }
+}
+
+%h3,
+h3 {
+  font-size: em(28px);
+
+  @media #{$medium} {
+    font-size: 2em;
+  }
+
+  @media #{$small} {
+    font-size: 1.5em;
   }
 }
 

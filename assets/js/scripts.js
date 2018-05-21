@@ -31,4 +31,33 @@
     setCustomBgColor(el);
   });
 
+  var $iconMenu = $(".js-icon-menu"),
+  dropMenu = function (el) {
+    el = $(el);
+    el.parents(".menu-responsive").toggleClass("open");
+  };
+  $iconMenu.on("click", function () {
+    dropMenu(this);
+  })
+
+  var $jsPlayVideo = $('.js-play-video'),
+    playVideo = function (e) {
+      var $iframeYoutube = $(this).find('.youtube-embed');
+      $(this).addClass("play-video");
+      if ($iframeYoutube.length) {
+        $iframeYoutube[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+      }
+    };
+
+  if ($jsPlayVideo.length) {
+    $jsPlayVideo.find('.youtube-embed').each(function () {
+      var srcYoutube = $(this).attr('src');
+      if (srcYoutube.indexOf('enablejsapi=1') < 0) {
+        srcYoutube = srcYoutube + '?enablejsapi=1';
+        $(this).attr('src',srcYoutube);
+      }
+    });
+    $jsPlayVideo.on('click', playVideo);
+  }
+
 }( jQuery ));

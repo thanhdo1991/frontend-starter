@@ -1,23 +1,23 @@
 #{$all-buttons} {
-  @include button-bg($color-yellow, $color-yellow-dark, $color-tuatara);
+  @include button-bg($color-black, $color-dark);
   -webkit-font-smoothing: antialiased;
   appearance: none;
-  border-radius: 2px;
+  border-radius: 0;
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
-  font-size: 14px;
-  font-weight: 500;
+  font-family: $hill;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 1;
-  padding: 12px 24px;
+  padding: 20px 38px 12px;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  min-width: 121px;
 
   &:focus {
     outline: $focus-outline;
@@ -29,8 +29,8 @@
     opacity: .5;
   }
 
-  &.red {
-    @include button-bg($color-red, $color-red-dark);
+  &.white {
+    @include button-bg($color-white, $color-light, $color-black);
   }
 
   &.big {

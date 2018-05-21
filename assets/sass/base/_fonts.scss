@@ -9,3 +9,43 @@ $fonts-dir: '../fonts';
   font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('#{$fonts-dir}/HelveticaNeue-Bold.eot');
+  src: url('#{$fonts-dir}/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/HelveticaNeue-Bold.woff') format('woff'),
+    url('#{$fonts-dir}/HelveticaNeue-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hill';
+  src: url('#{$fonts-dir}/Hill.eot');
+  src: url('#{$fonts-dir}/Hill.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/Hill.woff') format('woff'),
+    url('#{$fonts-dir}/Hill.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hill';
+  src: url('#{$fonts-dir}/Hill-Bold.eot');
+  src: url('#{$fonts-dir}/Hill-Bold.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/Hill-Bold.Hill') format('woff'),
+    url('#{$fonts-dir}/Hill-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hill';
+  src: url('#{$fonts-dir}/Hill-Heavy.eot');
+  src: url('#{$fonts-dir}/Hill-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('#{$fonts-dir}/Hill-Heavy.woff') format('woff'),
+    url('#{$fonts-dir}/Hill-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

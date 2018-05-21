@@ -1,122 +1,135 @@
-$navigation-height: 50px;
+#header {
+  padding-bottom: 45px;
+  padding-top: 41px;
+  position: relative;
 
-#intro {
+  @media #{$medium} {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  @media #{$small} {
+    padding: 0;
+  }
+
+  > .container {
+    .left-content {
+      float: left;
+    }
+
+    .right-content {
+      float: right;
+      padding: 70px 0 46px;
+
+      @media #{$medium} {
+        padding: 50px 0 35px;
+      }
+
+      @media #{$small} {
+        background-color: rgba($color-black, 0.8);
+        float: none;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 100%;
+        z-index: 2;
+      }
+    }
+  }
+
   .logo {
-    height: $navigation-height;
-    transition: all .3s ease;
-    margin-bottom:100px;
-
     @media #{$small} {
-      height: 58px;
+      height: 80px;
     }
 
     h1 {
-      font-size: 1.4em;
-      line-height: $navigation-height;
+      font-size: em(80px);
       margin: 0;
       padding: 0;
+      font-weight: 700;
 
       @media #{$small} {
+        font-size: 30px;
         line-height: 58px;
-      }
-    }
-
-    h1 > a {
-      color: $color-white;
-      display: block;
-      font-size: 22px;
-      line-height: 1.2;
-      margin: 32px auto 0;
-      max-width: 413px;
-      outline: none;
-      text-align: center;
-      text-decoration: none;
-
-      @media #{$small} {
-          max-width: 260px;
+        display: inline-block;
       }
 
-      &:hover {
-        color: $color-white;
-      }
+      > a {
+        margin: 10px 0;
+        outline: none;
+        color: $color-black;
 
-      &.image {
-        background-position: left center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 55px;
-        overflow: hidden;
-        text-indent: 450px;
-        transition: all .3s ease;
-        white-space: nowrap;
+        &.image {
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 130px;
+          max-width: 180px;
+          overflow: hidden;
+          text-indent: 200px;
+          transition: all .3s ease;
+          white-space: nowrap;
+          display: block;
 
-        @media #{$medium} {
-          margin-top: 45px;
-        }
+          @media #{$medium} {
+            height: 80px;
+            margin: 15px 0px 13px;
+            max-width: 130px;
+            text-indent: 140px;
+          }
 
-        @media #{$small} {
-          height: 35px;
-          margin-top: 30px;
+          @media #{$small} {
+            height: 60px;
+            margin: 10px 0;
+          }
+
+          @media #{$tiny} {
+            margin: 10px auto;
+          }
         }
       }
     }
   }
-}
 
-#header {
-    background-color: rgba($color-dune, 0.95);
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding: 0;
+  .main-navigation {
+    float: right;
 
-    .logo {
-        height: $navigation-height;
-        transition: all .3s ease;
-
-        @media #{$small} {
-            height: 58px;
-        }
-
-        h1 {
-            font-size: 1.4em;
-            line-height: $navigation-height;
-            margin: 0;
-            padding: 0;
-
-            @media #{$small} {
-                line-height: 58px;
-            }
-        }
-
-        h1 > a {
-            color: $color-navy;
-            outline: none;
-            text-decoration: none;
-
-            &:hover {
-                color: $color-blue;
-            }
-
-            &.image {
-                background-position: left center;
-                background-repeat: no-repeat;
-                background-size: contain;
-                display: block;
-                float: left;
-                height: 60px;
-                margin: 17.5px 0px;
-                max-width: 240px;
-                overflow: hidden;
-                text-indent: 260px;
-                transition: all .3s ease;
-
-                @media #{$small} {
-                    height: 42px;
-                    margin: 8px 0px;
-                    max-width: 200px;
-                    text-indent: 220px;
-                }
-            }
-        }
+    @media #{$small} {
+      float: none;
     }
+
+    .menu {
+      li {
+        @media #{$small} {
+          display: block;
+          margin-left: 0;
+        }
+
+        a {
+          @media #{$small} {
+            padding: 17px;
+            display: block;
+            color: $color-white;
+            font-weight: 700;
+          }
+        }
+
+        &:hover,
+        &:active,
+        &.active {
+          color: $color-black;
+          text-decoration: underline;
+
+          @media #{$small} {
+            color: $color-white;
+            background-color: rgba($color-black, .18);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }

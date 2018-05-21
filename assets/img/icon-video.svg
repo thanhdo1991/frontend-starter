@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Statens-Museum-for-Kunst" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SMK-Lndr" transform="translate(-1322.000000, -2681.000000)">
+            <g id="Group" transform="translate(1322.000000, 2681.000000)">
+                <circle id="Oval-2" fill="#FFFFFF" opacity="0.800000012" cx="25.5" cy="25.5" r="25.5"></circle>
+                <polygon id="Triangle" fill="#000000" transform="translate(27.500000, 26.500000) rotate(-270.000000) translate(-27.500000, -26.500000) " points="27.5 19 37 34 18 34"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

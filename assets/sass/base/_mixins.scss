@@ -6,14 +6,14 @@
   @return ($target / $context) * 1em;
 }
 
-@mixin button-bg($bg, $bgAcive, $textColor: $color-white) {
+@mixin button-bg($bg, $bgActive, $textColor: $color-white) {
   background-color: $bg;
   color: $textColor;
 
   &:hover,
   &:active,
   &.active {
-    background-color: $bgAcive;
+    background-color: $bgActive;
     color: $textColor;
   }
 
@@ -22,5 +22,28 @@
     &:active {
       background: $bg;
     }
+  }
+}
+
+@mixin helvetica {
+  font-family: $helvetica;
+}
+
+@mixin hill {
+  font-family: $hill;
+}
+
+@mixin gradient-overlay($gr-color, $gr-opacity) {
+  position: relative;
+
+  &:before {
+    background: rgba($gr-color, $gr-opacity);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
   }
 }

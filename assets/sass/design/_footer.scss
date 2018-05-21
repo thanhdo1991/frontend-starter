@@ -1,68 +1,107 @@
-// Footer related styles
 #footer {
-    padding: 20px 0 20px;
-    background-color: rgba($color-dune, 0.95);
+  position: relative;
+  padding: 0 0 51px;
 
-    @media #{$medium} {
-        padding: 2em 0;
+  @media #{$medium} {
+    padding-bottom: 30px;
+  }
+
+  @media #{$small} {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .footer-inner {
+    border-top: 1px solid $color-black;
+  }
+
+  > .container {
+    .left-content {
+      float: left;
+      padding: 12px 0;
+
+      @media #{$small} {
+        float: none;
+      }
     }
 
-    nav {
-        text-align: center;
+    .right-content {
+      float: right;
+      padding: 56px 0;
 
-        ul {
-            list-style: none;
-            margin: 0 auto;
-            width: auto;
-            float: right;
+      @media #{$small} {
+        float: none;
+        padding: 10px 0 20px;
+      }
+    }
+  }
 
-            li {
-                display: inline-block;
+  .logo {
+    h1 {
+      font-size: em(80px);
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
 
-                a,
-                a:link,
-                a:visited {
-                    color: $footer-brown;
-                    font-size: 0.8125em;
-                    line-height: 40px;
-                    padding: 20px 14px;
-                    text-decoration: none;
+      @media #{$small} {
+        font-size: 16px;
+        line-height: 58px;
+        display: inline-block;
+      }
 
-                    @media #{$small} {
-                        font-size: 1.1em;
-                        line-height: 28px;
-                        padding: 20px 10px;
-                    }
-                }
+      > a {
+        margin: 10px 0;
+        outline: none;
+        color: $color-black;
 
-                a:hover,
-                a:active {
-                    text-decoration: none;
-                    color:white;
-                }
-            }
+        &.image {
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          display: block;
+          height: 90px;
+          max-width: 150px;
+          overflow: hidden;
+          text-indent: 170px;
+          transition: all .3s ease;
+          white-space: nowrap;
+
+          @media #{$medium} {
+            height: 80px;
+            margin: 15px 0px 13px;
+            max-width: 130px;
+            text-indent: 140px;
+          }
+
+          @media #{$small} {
+            background-position: center center;
+            height: 60px;
+            margin: 10px 0;
+          }
         }
+      }
+    }
+  }
+
+  .main-navigation {
+    float: right;
+
+    @media #{$small} {
+      float: none;
     }
 
-    .copyright {
-        padding: 2em;
+    ul {
+      li {
+        margin-left: 17px;
 
-        @media #{$medium} {
-            padding: 1em 2em;
+        @media #{$tiny} {
+          margin-bottom: 5px;
         }
 
-        h3, h4, h5, p {
-            color: $footer-brown;
-            display: block;
-            font-size: 13px;
-            line-height: 1.4;
-            text-align: right;
-            font-style:italic;
-            width: 100%;
-
-            strong {
-                font-weight: bold;
-            }
+        a {
+          font-size: 16px;
         }
+      }
     }
+  }
 }

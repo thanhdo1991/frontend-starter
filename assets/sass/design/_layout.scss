@@ -5,71 +5,74 @@ html {
 }
 
 // Basic Layout Considerations
-body > section {
-    @include clearfix();
-    padding-bottom: 36px;
-    padding-top: 37px;
+.page-wrapper > section {
+  @include clearfix();
+  padding: 50px 0;
 
-    > .container {
-        @include grid-container;
-        margin: 0 auto;
-        max-width: $page-width;
-    }
+  @media #{$medium} {
+    padding: 40px 0;
+  }
 
-    .section-header,
-    .section-title {
-        text-align: center;
-    }
+  @media #{$small} {
+    padding: 30px 0;
+  }
+}
+
+.container,
+.container--small {
+  @include grid-container;
+  margin: 0 auto;
+  max-width: $page-width;
+}
+
+.container--small {
+  max-width: $page-small-width;
 }
 
 .grid-3 {
-    @include grid-column(3);
+  @include grid-column(3, $medium-grid);
 
-    @media #{$medium} {
-        @include grid-column(6, $medium-grid);
-    }
+  @media #{$large} {
+    @include grid-column(3);
+  }
+
+  @media #{$medium} {
+    @include grid-column(6, $medium-grid);
+  }
+
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
 }
 
 .grid-4 {
+  @include grid-column(4, $medium-grid);
+
+  @media #{$large} {
     @include grid-column(4);
+  }
 
-    @media #{$medium} {
-        @include grid-column(6, $medium-grid);
-    }
+  @media #{$medium} {
+    @include grid-column(6, $medium-grid);
+  }
 
-    @media #{$small} {
-        @include grid-column(6, $small-grid);
-    }
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
 }
 
 .grid-12 {
+  @include grid-column(12, $medium-grid);
+
+  @media #{$large} {
     @include grid-column(12);
+  }
 
-    @media #{$small} {
-        @include grid-column(6, $small-grid);
-    }
-}
+  @media #{$medium} {
+    @include grid-column(12, $medium-grid);
+  }
 
-#header {
-    padding-top: 40px;
-
-    @media #{$large} {
-        padding-top: 50px;
-    }
-
-    @media #{$small} {
-        padding-top: 20px;
-    }
-}
-
-#footer {
-    padding-bottom: 30px;
-
-     @media #{$large} {
-        padding-bottom: 60px;
-    }
-
-    @media #{$small} {
-        padding-top: 20px;
-    }
+  @media #{$small} {
+    @include grid-column(6, $small-grid);
+  }
 }
