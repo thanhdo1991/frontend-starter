@@ -1,0 +1,49 @@
+//Convert px to em
+@function em($target, $context: $base-font-size) {
+  @if $target == 0 {
+    @return 0;
+  }
+  @return ($target / $context) * 1em;
+}
+
+@mixin button-bg($bg, $bgActive, $textColor: $color-white) {
+  background-color: $bg;
+  color: $textColor;
+
+  &:hover,
+  &:active,
+  &.active {
+    background-color: $bgActive;
+    color: $textColor;
+  }
+
+  &:disabled {
+    &:hover,
+    &:active {
+      background: $bg;
+    }
+  }
+}
+
+@mixin helvetica {
+  font-family: $helvetica;
+}
+
+@mixin hill {
+  font-family: $hill;
+}
+
+@mixin gradient-overlay($gr-color, $gr-opacity) {
+  position: relative;
+
+  &:before {
+    background: rgba($gr-color, $gr-opacity);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

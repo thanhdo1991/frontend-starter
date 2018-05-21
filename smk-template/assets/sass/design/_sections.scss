@@ -1,0 +1,41 @@
+.section-title {
+  margin-bottom: 50px;
+
+  @media #{$medium} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$small} {
+    margin-bottom: 30px;
+  }
+}
+
+#two {
+  @media #{$large} {
+    padding-bottom: 101px;
+  }
+}
+
+#three {
+  @media #{$large} {
+    padding-bottom: 40px;
+  }
+}
+
+#four {
+  @media #{$large} {
+    padding-bottom: 62px;
+  }
+}
+
+#five {
+  @media #{$large} {
+    padding-bottom: 98px;
+  }
+
+  .section-title {
+    @media #{$large} {
+      margin-bottom: 61px;
+    }
+  }
+}

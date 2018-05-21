@@ -1,0 +1,39 @@
+#{$all-buttons} {
+  @include button-bg($color-black, $color-dark);
+  -webkit-font-smoothing: antialiased;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $hill;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 20px 38px 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  min-width: 121px;
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+  }
+
+  &.white {
+    @include button-bg($color-white, $color-light, $color-black);
+  }
+
+  &.big {
+    padding: 14px 40px 18px 36px;
+  }
+}
